@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wireminute.pages.dev/sitemap.xml
+Sitemap: https://wireminute.github.io/sitemap.xml
