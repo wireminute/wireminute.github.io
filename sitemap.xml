@@ -43,6 +43,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wireminute.github.io/#/story/original-supreme-court-trump-asylum-ban</loc>
+    <lastmod>2026-11-13T23:04:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://wireminute.github.io/#/story/original-us-army-officer-named-russia-spy-arrest</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>daily</changefreq>
@@ -88,12 +94,6 @@
     <loc>https://wireminute.github.io/#/story/original-new-orleans-tanker-riverboat-collision</loc>
     <lastmod>2026-11-13T21:15:00Z</lastmod>
     <changefreq>hourly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wireminute.github.io/#/story/original-nvidia-leadership-washington-chip-row</loc>
-    <lastmod>2026-11-13T20:36:00Z</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
