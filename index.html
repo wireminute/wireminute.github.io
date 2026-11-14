@@ -1565,6 +1565,32 @@ function isJunkText(t){
   if (t.length > 40 && codeChars / t.length > 0.06) return true;
   return false;
 }
+/* Watchdog fix 2026-11-14: streaming-aggregator bait titles reach the
+   ticker and live rail from the Google News feeds — "[[[SPORT TV ]
+   Bangladesh vs Pakistan live stream", "[WATCH ESPN!] Bangladesh vs
+   Pakistan Live Free", "China vs Malaysia Live", full-width homoglyph
+   variants ("ＬＩＶＥ Ｓｔｒｅａｍｓ"). They are not news headlines: drop
+   them at ingest (live parseFeed, snapshot hydrate and the snapshot
+   builder) instead of cleaning them, so they never surface. Each rule
+   is narrow — legit headlines never contain doubled brackets, a
+   bracketed WATCH/LIVE tag on a "vs" matchup sold as a stream, or a
+   bare "X vs Y Live" ending. */
+function isSpamTitle(t){
+  if (!t) return false;
+  /* Spammers hide behind zero-width chars and full-width homoglyphs
+     (ＬＩＶＥ, Ｓｔｒｅａｍｓ): fold both away before testing. */
+  var n = String(t).replace(/[\u200B\u200C\u200D\uFEFF]/g, "")
+    .replace(/[\uFF01-\uFF5E]/g, function(c){ return String.fromCharCode(c.charCodeAt(0) - 0xFEE0); })
+    .replace(/\u3000/g, " ").replace(/\s+/g, " ").trim();
+  if (/\[{2,}/.test(n)) return true; /* bracket spam: "[[[SPORT TV ] ..." */
+  /* Bracketed WATCH/LIVE/STREAM tag + a "vs" matchup sold as a stream. */
+  if (/^\s*\[[^\]]*(watch|live|stream|sport)[^\]]*\]/i.test(n) && /\bvs\.?\b/i.test(n) && /\b(live|stream|free|watch|channel|tv)\b/i.test(n)) return true;
+  /* "SPORT TV" + live stream is only ever aggregator bait. */
+  if (/\bSPORT\s*TV\b/i.test(n) && /live\s*streams?\b/i.test(n)) return true;
+  /* Bare "X vs Y Live" — a live-score/stream bait page, never a headline. */
+  if (/\bvs\.?\b/i.test(n) && /\blive\s*$/i.test(n)) return true;
+  return false;
+}
 function cleanText(raw){
   var s = raw == null ? "" : String(raw);
   for (var i = 0; i < 3; i++){
@@ -1824,6 +1850,7 @@ function parseFeed(xmlText, feed){
     if (!title) continue;
     if (feed.strip) title = title.replace(/\s+-\s+[^-]{2,40}$/, "").trim();
     title = cleanTitleText(title) || decodeEntities(title).replace(/\s+/g, " ").trim();
+    if (isSpamTitle(title)) continue; /* watchdog fix 2026-11-14: aggregator-bait title, never surfaces */
     /* The feed item's own article URL is deliberately never read or used:
        every story opens inside WireMinute, never out to another site. */
     var dateStr = itemText(it, "pubDate") || itemText(it, "published") || itemText(it, "updated") || itemText(it, "dc:date");
@@ -2218,7 +2245,7 @@ function refreshOpenArticle(){
 function hydrateStories(list){
   return (list || []).map(function(s){
     return { id: s.id, title: cleanTitleText(s.title) || s.title || "", time: new Date(s.time), summary: cleanBodyText(s.summary), full: cleanBodyText(s.full), img: s.img || "", sec: normSec(s.sec) };
-  }).filter(isFreshStory);
+  }).filter(isFreshStory).filter(function(s){ return !isSpamTitle(s.title); }); /* watchdog fix 2026-11-14: aggregator-bait title, never surfaces */
 }
 function serializeStories(list){
   return list.map(function(s){
