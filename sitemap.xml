@@ -61,6 +61,12 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://wireminute.com/s/us-army-officer-named-russia-spy-arrest.html</loc>
+    <lastmod>2026-11-14T01:00:45Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://wireminute.com/s/david-walliams-met-police-probe.html</loc>
     <lastmod>2026-11-14T00:53:39Z</lastmod>
     <changefreq>daily</changefreq>
@@ -82,12 +88,6 @@
     <loc>https://wireminute.com/s/supreme-court-trump-asylum-ban.html</loc>
     <lastmod>2026-11-13T23:04:00Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wireminute.com/s/us-army-officer-named-russia-spy-arrest.html</loc>
-    <lastmod>2026-11-13T22:30:00Z</lastmod>
-    <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
