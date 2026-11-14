@@ -1618,7 +1618,8 @@ function isJunkText(t){
    them at ingest (live parseFeed, snapshot hydrate and the snapshot
    builder) instead of cleaning them, so they never surface. Each rule
    is narrow — legit headlines never contain doubled brackets, a
-   bracketed WATCH/LIVE tag on a "vs" matchup sold as a stream, or a
+   bracketed WATCH/LIVE tag on a "vs" matchup sold as a stream, an
+   UNCLOSED bracketed LIVE tag sold with "TV Channel"/"Live Today", or a
    bare "X vs Y Live" ending. */
 function isSpamTitle(t){
   if (!t) return false;
@@ -1630,6 +1631,12 @@ function isSpamTitle(t){
   if (/\[{2,}/.test(n)) return true; /* bracket spam: "[[[SPORT TV ] ..." */
   /* Bracketed WATCH/LIVE/STREAM tag + a "vs" matchup sold as a stream. */
   if (/^\s*\[[^\]]*(watch|live|stream|sport)[^\]]*\]/i.test(n) && /\bvs\.?\b/i.test(n) && /\b(live|stream|free|watch|channel|tv)\b/i.test(n)) return true;
+  /* Unclosed-bracket variant of the same bait: "[LiVe )TV Channel:
+     Bangladesh vs Pakistan Live Today" — no "]" anywhere, so the
+     closed-bracket rule above never fires. A legit "[LIVE] ..." label
+     always closes its bracket, so requiring NO "]" keeps this narrow. */
+  if (/^\s*\[[^\]]*\b(live|watch|stream)\b/i.test(n) && n.indexOf("]") === -1 &&
+      /\b(tv\s*channel|live\s*today|watch\s*live|live\s*stream|free\s*live)\b/i.test(n)) return true;
   /* "SPORT TV" + live stream is only ever aggregator bait. */
   if (/\bSPORT\s*TV\b/i.test(n) && /live\s*streams?\b/i.test(n)) return true;
   /* Bare "X vs Y Live" — a live-score/stream bait page, never a headline. */
