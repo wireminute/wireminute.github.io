@@ -1304,7 +1304,12 @@ function parseFeed(xmlText, feed){
   return out;
 }
 function render(){
-  var pool = currentSec === "latest" ? allStories : allStories.filter(function(s){ return s.sec === currentSec; });
+  var pool = currentSec === "latest" ? allStories.slice() : allStories.filter(function(s){ return s.sec === currentSec; });
+  /* Owner rule (2026-11-14): every category shows the latest post on
+     top, then the one older than it, then older still — sort explicitly
+     on every render so the order never depends on how the stream was
+     assembled (boot cache, snapshot merge or live feeds). */
+  pool.sort(function(a, b){ return b.time - a.time; });
   /* Visual rule: the lead and the grid are photo surfaces — a story
      with no photo may still appear in the ticker, the live rail and
      search, but it never renders as a brand-card placeholder here.
@@ -1361,7 +1366,7 @@ function origCard(s){
 function renderOrig(){
   var box = document.getElementById("origBox");
   if (!box) return;
-  var list = ORIGINALS.filter(function(s){ return currentSec === "latest" || s.sec === currentSec; }).slice(0, 9); /* Top Stories shows the 9 newest originals; search still covers all embedded originals. */
+  var list = ORIGINALS.filter(function(s){ return currentSec === "latest" || s.sec === currentSec; }).sort(function(a, b){ return b.time - a.time; }).slice(0, 9); /* Top Stories: strictly newest-first (owner rule 2026-11-14 — latest on top, then older, then older), then the 9 newest originals; search still covers all embedded originals. */
   if (!list.length){ box.innerHTML = ""; return; }
   var first = list[0];
   var html = '<h2 class="orig-head">Top Stories</h2>' +
@@ -1708,6 +1713,7 @@ function bootData(){
     }
   } catch (e) {}
   if (chosen.length){
+    chosen.sort(function(a, b){ return b.time - a.time; }); /* newest-first from the very first paint (owner rule 2026-11-14) */
     allStories = chosen;
     chosen.forEach(function(s){ storyCache[s.id] = s; });
     lastFingerprint = chosen.map(function(s){ return s.id; }).join(",");
