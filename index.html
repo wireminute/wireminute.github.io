@@ -1711,6 +1711,11 @@ function bootData(){
     lastOk = chosenAt;
     document.getElementById("lastUpdated").textContent = clockTime(new Date(chosenAt || Date.now()));
   }
+  /* Snapshot stories stay openable even when the localStorage cache
+     (or the live feeds) no longer carry them: search finds them, so
+     the hash router must too. Seed the cache, not the stream — the
+     visible headlines stay the cache/live set. */
+  hydrateStories(INITIAL_STORIES).forEach(function(s){ if (!storyCache[s.id]) storyCache[s.id] = s; });
 }
 function setUpdating(on){
   var el = document.getElementById("updInd");
