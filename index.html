@@ -2386,7 +2386,7 @@ function renderArticle(id, keepScroll){
   if (!s) return false;
   var y = window.scrollY || 0;
   openArticleId = id;
-  openArticleKey = s.title + "|" + (s.full || "") + "|" + (s.summary || "");
+  openArticleKey = s.title + "|" + (s.full || "") + "|" + (s.summary || "") + "|" + (s.img || "") + "|" + (s.credit || "");
   applyArticleMeta(s);
   var pts = keyPoints(s);
   var rel = ORIGINALS.concat(allStories).filter(function(r){ return r.sec === s.sec && r.id !== id; }).slice(0, 4);
@@ -2558,7 +2558,7 @@ function refreshOpenArticle(){
   if (!openArticleId) return;
   var s = storyCache[openArticleId];
   if (!s) return; /* story left the feed: keep showing the cached copy untouched */
-  var key = s.title + "|" + (s.full || "") + "|" + (s.summary || "");
+  var key = s.title + "|" + (s.full || "") + "|" + (s.summary || "") + "|" + (s.img || "") + "|" + (s.credit || "");
   if (key !== openArticleKey) renderArticle(openArticleId, true);
 }
 
@@ -2668,6 +2668,16 @@ function rebuildFromFeeds(){
   });
   uniq = uniq.filter(isFreshStory);
   uniq.sort(function(a, b){ return b.time - a.time; });
+  /* Snapshot overrides win (parent fix 2026-11-15): a baked snapshot
+     story carries the corrected photo/credit (IMAGE_OVERRIDES in the
+     regen tool); the live-feed copy of the same story must not
+     overwrite them, or the fix only ever shows in the static HTML. */
+  var snapById = {};
+  hydrateStories(INITIAL_STORIES).forEach(function(s){ snapById[s.id] = s; });
+  uniq.forEach(function(s){
+    var o = snapById[s.id];
+    if (o){ if (o.img) s.img = o.img; if (o.credit) s.credit = o.credit; }
+  });
   /* Cheap refresh: if the headline set is identical to last time,
      skip the full re-render — only the Last updated stamp moves. */
   var fp = uniq.map(function(s){ return s.id; }).join(",");
