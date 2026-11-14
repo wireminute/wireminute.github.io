@@ -416,8 +416,8 @@ function normSec(sec){
 }
 function secName(sec){ return SECNAMES[sec] || ""; }
 var KEYWORDS = [
-  ["business", /\b(business|econom|market|stock|trade|bank|rupee|dollar|inflation|budget|finance|oil price|exports?|imports?|investor|shares|petrol price)\b/i],
-  ["sports", /\b(cricket|football|hockey|tennis|sport|match|tournament|world cup|league|player|wicket|goal|olympic|athlete|racing)\b/i],
+  ["business", /\b(business|econom\w*|market|stock|trade|bank|rupee|dollar|inflation|budget|finance|oil prices?|exports?|imports?|investor|investments?|shares|petrol price|fiscal|revenues?|mining)\b/i],
+  ["sports", /\b(cricket|football|hockey|tennis|sport|match|tournament|world cup|league|player|wicket|goal|olympic|athlete|racing|test match|test series|first test|second test|third test|fourth test|fifth test)\b/i],
   ["technology", /\b(technology|tech|smartphone|mobile phone|internet|software|app|artificial intelligence|\bAI\b|gadget|cyber|digital|5G|robot)\b/i],
   ["health", /\b(health|hospital|doctor|disease|virus|vaccine|medical|patients?|cancer|diabetes|dengue|polio|clinic|surgery)\b/i],
   ["politics", /\b(politic|government|parliament|senate|election|minister|prime minister|president|assembly|court|supreme court|army chief|protest|democracy|vote|policy|diplomat|talks|ceasefire|sanctions?)\b/i]
@@ -1093,9 +1093,18 @@ function storyId(title, d){
   for (var i = 0; i < s.length; i++){ h = ((h * 33) ^ s.charCodeAt(i)) >>> 0; }
   return h.toString(36);
 }
-function classify(text, fallback){
+function classify(title, desc, fallback){
+  /* Title first: the headline states the topic. The body only breaks ties,
+     and only its lede (first sentence) counts — incidental mentions deeper
+     in the text (e.g. "health care services" in a flight-grounding story,
+     a minister's name in a snowfall story, "Business Recorder" in a
+     diabetes-walk story) must not re-file the story. */
   for (var i = 0; i < KEYWORDS.length; i++){
-    if (KEYWORDS[i][1].test(text)) return KEYWORDS[i][0];
+    if (KEYWORDS[i][1].test(title)) return KEYWORDS[i][0];
+  }
+  var lede = (desc || "").split(/[.!?]\s+/)[0] || "";
+  for (var i = 0; i < KEYWORDS.length; i++){
+    if (KEYWORDS[i][1].test(lede)) return KEYWORDS[i][0];
   }
   return fallback || "world";
 }
@@ -1223,7 +1232,7 @@ function parseFeed(xmlText, feed){
     var desc = cleanBodyText(descRaw);
     if (desc.toLowerCase().indexOf(title.toLowerCase().slice(0, 42)) === 0) desc = "";
     var summary = truncate(desc, 190);
-    var sec = normSec(feed.sec === "auto" ? classify(title + " " + desc, "world") : feed.sec);
+    var sec = normSec(feed.sec === "auto" ? classify(title, desc, "world") : feed.sec);
     out.push({ id: storyId(title, d), title: title, time: d, summary: summary, full: desc, img: img, sec: sec });
   }
   return out;
