@@ -321,6 +321,7 @@ footer .topstories a:hover{text-decoration:underline}
       <h3>Top Stories</h3>
       <!--TOPSTORIES:START-->
       <ul>
+        <li><a href="https://wireminute.com/s/india-pakistan-u19-asia-cup-final.html">Ulva's Last-Ball Four Seals One-Wicket Win as India Beat Pakistan to Ninth U19 Asia Cup Title</a></li>
         <li><a href="https://wireminute.com/s/pakistan-minister-india-visit-sco-forum.html">Pakistan to Send Minister to India for First Time in Over Three Years</a></li>
         <li><a href="https://wireminute.com/s/kreiss-tomkins-wins-alaska-governor.html">Democrat Kreiss-Tomkins Wins Alaska Governor's Race, First Since 1998</a></li>
         <li><a href="https://wireminute.com/s/iran-vance-removed.html">Tehran Reads Vance's Removal as a Warning as Trump Says No Iran Deal Is Needed</a></li>
@@ -461,6 +462,27 @@ var PUBLISHER_NAME_RE = new RegExp("\\b(?:" + PUBLISHER_ALT + ")\\b", "i");
 /* WireMinute original reporting: our own articles, written in-house.
    They lead the site; the live feed below them is only a headline stream. */
 var ORIGINALS = [
+ {
+  "slug": "india-pakistan-u19-asia-cup-final",
+  "publishedAt": "2026-11-14T15:50:00Z",
+  "lede": "India won the Under-19 Asia Cup for a record ninth time on Saturday, beating Pakistan by one wicket off the final ball after a 338-run chase in Muscat that turned on a late stand between Mohit Ulva and Manal Chauhan.",
+  "body": [
+   "India won the Under-19 Asia Cup for a ninth time on Saturday, beating Pakistan by one wicket off the final ball of a 338-run chase at the Al Amerat Cricket Ground in Muscat. Chasing 338, India finished on 339 for nine, with Mohit Ulva striking a boundary from the last delivery to complete a recovery that had looked beyond them with eight wickets down.",
+   "Pakistan, the defending champions, had posted 337 for nine after winning the toss and choosing to bat. Usman Khan made 107, Abdul Qadir added 80 and Farhan Yousaf 60, before Kavya Patel took four for 68 and Chigurupati Venkata three for 40 to keep the total within reach.",
+   "India's reply was built on captain Lakshya Raichandani's 80 and Aaryavir Sehwag's 58, but the chase stalled badly and the side slipped to 252 for eight in the 42nd over. Manal Chauhan's 47 from 32 balls and Ulva's unbeaten 49 from 26 turned the match around, and with three runs needed from the last ball Ulva drove leg-spinner Ahmed Hussain through the covers for four. Rizwanullah took three for 53 for Pakistan.",
+   "The win is India's ninth Under-19 Asia Cup title, extending their own record, and their first since they beat Sri Lanka in the 2021 final. It also settled the score with Pakistan, who had beaten India in the group stage and arrived in Muscat as holders of the trophy. India's ninth title extends a record they already held, and the win handed the trophy back from the side that had held it since the last edition."
+  ],
+  "keyPoints": [
+   "India beat Pakistan by one wicket off the final ball to win the U19 Asia Cup, chasing 338 to finish 339 for nine in Muscat.",
+   "Mohit Ulva hit the winning boundary off the last ball, finishing unbeaten on 49 from 26 balls after India had slumped to 252 for eight.",
+   "Captain Lakshya Raichandani made 80 and Aaryavir Sehwag 58; Manal Chauhan added 47 from 32 balls in the recovery.",
+   "Pakistan posted 337 for nine, led by Usman Khan's 107; the title is India's ninth, a record, and their first since 2021."
+  ],
+  "img": "images/thumb-india-pakistan-u19-asia-cup-final.jpg",
+  "credit": "Photo: wonker, CC BY 2.0, via Wikimedia Commons",
+  "title": "Ulva's Last-Ball Four Seals One-Wicket Win as India Beat Pakistan to Ninth U19 Asia Cup Title",
+  "sec": "sports"
+ },
  {
   "slug": "pakistan-minister-india-visit-sco-forum",
   "publishedAt": "2026-11-14T15:10:43Z",
@@ -2305,7 +2327,10 @@ function bootData(){
     chosen.forEach(function(s){ storyCache[s.id] = s; });
     lastFingerprint = chosen.map(function(s){ return s.id; }).join(",");
     lastOk = chosenAt;
-    document.getElementById("lastUpdated").textContent = clockTime(new Date(chosenAt || Date.now()));
+    /* First paint never shows a stale clock time: a cached/snapshot stamp
+       older than ~2 minutes stays as "\u2026" until the live fetch lands and
+       stampUpdated() sets the true time (watchdog fix 2026-11-14). */
+    document.getElementById("lastUpdated").textContent = (chosenAt && (Date.now() - chosenAt) <= 2 * 60 * 1000) ? clockTime(new Date(chosenAt)) : "\u2026";
   }
   /* Snapshot stories stay openable even when the localStorage cache
      (or the live feeds) no longer carry them: search finds them, so
