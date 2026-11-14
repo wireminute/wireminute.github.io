@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WireMinute — Breaking News, World, Politics, Business, Technology, Sports &amp; Health, Updated Every Minute</title>
+<title>WireMinute | Breaking News &amp; Live World Updates</title>
 <meta name="description" content="WireMinute brings you breaking news and live updates every minute: world news, politics, business, technology, sports and health, in short, clear summaries.">
 <meta name="keywords" content="breaking news, live news updates, world news, politics news, business news, technology news, sports news, health news, latest headlines, WireMinute">
 <meta name="robots" content="index, follow">
+<meta name="google-site-verification" content="rtBpmmtFo1jT-kHLxQuaDun0ejRi6QV23UENHqbszPI" />
 <meta name="theme-color" content="#bb1919">
 <link rel="canonical" href="https://wireminute.com/">
 <link rel="manifest" href="/manifest.webmanifest">
@@ -31,10 +32,16 @@
 <meta property="og:description" content="Breaking news and live updates every minute: world, politics, business, technology, sports and health.">
 <meta property="og:url" content="https://wireminute.com/">
 <meta property="og:image" content="https://wireminute.com/images/og-brand.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="WireMinute - breaking news, updated every minute">
+<meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="WireMinute — Breaking News, Updated Every Minute">
 <meta name="twitter:description" content="Live news updates every minute: world, politics, business, technology, sports and health.">
 <meta name="twitter:image" content="https://wireminute.com/images/og-brand.jpg">
+<meta name="twitter:image:alt" content="WireMinute - breaking news, updated every minute">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23bb1919'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='34' font-weight='bold' fill='white' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">
 {
@@ -45,6 +52,7 @@
       "@id": "https://wireminute.com/#organization",
       "name": "WireMinute",
       "url": "https://wireminute.com/",
+      "logo": { "@type": "ImageObject", "url": "https://wireminute.com/icons/icon-512.png", "width": 512, "height": 512 },
       "slogan": "News, updated every minute"
     },
     {
@@ -71,6 +79,7 @@ img{max-width:100%;display:block}
 header{border-bottom:3px solid var(--red);background:#fff;position:sticky;top:0;z-index:50}
 .hbar{display:flex;align-items:center;gap:12px;padding:8px 0}
 .logo{font-family:Arial,Helvetica,sans-serif;font-size:clamp(26px,6vw,40px);font-weight:900;letter-spacing:-1px;line-height:1;white-space:nowrap}
+.logo .h1sub{display:block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:400;letter-spacing:0;color:var(--grey);margin-top:4px;white-space:normal}
 .logo span{color:var(--red)}
 .tagline{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:var(--grey);margin-top:2px}
 .hright{margin-left:auto;text-align:right;font-family:Arial,Helvetica,sans-serif}
@@ -132,6 +141,10 @@ footer h3{font-family:Arial,Helvetica,sans-serif;font-size:15px;margin-bottom:8p
 footer p{font-size:14px;color:#444}
 footer .flinks{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
 footer .flinks a{min-height:44px;display:inline-flex;align-items:center;padding:8px 14px;background:#fff;border:1px solid var(--line);border-radius:4px;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700}
+footer .topstories{margin:0 0 16px}
+footer .topstories ul{list-style:none}
+footer .topstories li{margin:7px 0;font-size:15px;line-height:1.4}
+footer .topstories a:hover{text-decoration:underline}
 .copy{border-top:1px solid var(--line);padding:12px 0 18px;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:var(--grey);display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between}
 /* Article view */
 #articleView,#pageView{padding-top:16px;padding-bottom:8px}
@@ -146,6 +159,10 @@ footer .flinks a{min-height:44px;display:inline-flex;align-items:center;padding:
 .keypoints li{margin:0 0 8px 18px;font-size:15px;line-height:1.55;color:#262626}
 .art-actions{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
 .art-actions button{min-height:44px;padding:10px 16px;border:1px solid var(--line);background:#fff;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;border-radius:4px;cursor:pointer}
+.share-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 22px}
+.share-row .share-label{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:800;color:var(--grey)}
+.share-link{min-height:44px;display:inline-flex;align-items:center;padding:8px 14px;border:1px solid var(--line);border-radius:4px;background:#fff;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700}
+.share-link:hover{border-color:var(--red);color:var(--red)}
 .relhead{font-family:Arial,Helvetica,sans-serif;font-size:17px;font-weight:900;border-bottom:2px solid var(--red);padding-bottom:8px;margin-bottom:14px}
 /* Reader tools: article share + text size, header search */
 .art-tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:0 0 14px}
@@ -201,7 +218,7 @@ footer .flinks a{min-height:44px;display:inline-flex;align-items:center;padding:
 <header>
   <div class="wrap hbar">
     <div>
-      <h1 class="logo">Wire<span>Minute</span></h1>
+      <h1 class="logo">Wire<span>Minute</span> <span class="h1sub">— Breaking News, Updated Every Minute</span></h1>
       <div class="tagline">News, updated every minute</div>
     </div>
     <div class="hright">
@@ -273,11 +290,23 @@ footer .flinks a{min-height:44px;display:inline-flex;align-items:center;padding:
       <a href="#/about">About</a>
       <a href="#/privacy">Privacy Policy</a>
       <a href="#/contact">Contact</a>
+      <a href="https://www.facebook.com/profile.php?id=61596385507723" target="_blank" rel="noopener">WireMinute on Facebook</a>
+    </div>
+    <div class="flinks" aria-label="News sections">
+      <a href="/">Latest</a>
+      <a href="#/section/world">World</a>
+      <a href="#/section/politics">Politics</a>
+      <a href="#/section/business">Business</a>
+      <a href="#/section/technology">Technology</a>
+      <a href="#/section/sports">Sports</a>
+      <a href="#/section/health">Health</a>
     </div>
     <div class="cols">
       <div id="about">
         <h3>About WireMinute</h3>
-        <p>WireMinute is an independent news updates website. We collect the latest headlines as they are published, present them as short, clear summaries under one brand, and refresh the page every minute so you always see the newest developments first. Every story opens right here on WireMinute — headline, summary and key points — so you can keep reading without leaving the page.</p>
+        <p>WireMinute is an independent online newspaper that brings you breaking news and live updates from around the world, refreshed every minute. Our newsroom follows the biggest developing stories around the clock — world affairs, politics, business, technology, sport and health — and publishes them as short, clear reports you can read in under a minute.</p>
+        <p>Every story on WireMinute is written in our own words by our own desk. We check the confirmed facts, cut away the noise, and present each report with a headline, a short summary and the key points that matter, together with a real photograph of the subject. Stories open right here on WireMinute, so you can follow a developing story from the first report to the latest update without being sent away to another website.</p>
+        <p>Start with the latest headlines on the home page, or go straight to the section you care about: Latest, World, Politics, Business, Technology, Sports and Health. The page refreshes itself every minute, and the Live Updates rail shows the newest developments as they land. You can also follow WireMinute on Facebook, where every story we publish is posted with its link. WireMinute — news, updated every minute.</p>
       </div>
       <div id="privacy">
         <h3>Privacy Policy</h3>
@@ -287,6 +316,27 @@ footer .flinks a{min-height:44px;display:inline-flex;align-items:center;padding:
         <h3>Contact</h3>
         <p>For corrections, questions or feedback about WireMinute, email us at avfgamer581@gmail.com or reach us through our Facebook page, WireMinute, and we will respond as quickly as we can. If you spot an error in a story, tell us the headline and the time you saw it so we can check it straight away.</p>
       </div>
+    </div>
+    <div class="topstories">
+      <h3>Top Stories</h3>
+      <!--TOPSTORIES:START-->
+      <ul>
+        <li><a href="https://wireminute.com/s/afghanistan-wakhan-road-china-border.html">Afghanistan's Road to China Is Finished — but the Border Stays Shut</a></li>
+        <li><a href="https://wireminute.com/s/raf-lakenheath-suspected-drone.html">US Forces Respond After Suspected Drone Spotted Over RAF Lakenheath</a></li>
+        <li><a href="https://wireminute.com/s/supreme-court-trump-asylum-ban.html">Supreme Court Agrees to Decide Fate of Trump's Border Asylum Ban</a></li>
+        <li><a href="https://wireminute.com/s/us-army-officer-named-russia-spy-arrest.html">Senior US Army Officer at NATO Base Named in Russia Espionage Case</a></li>
+        <li><a href="https://wireminute.com/s/dublin-merrion-square-device.html">Viable Bomb Found in Dublin Office as European Leaders Gather Nearby</a></li>
+        <li><a href="https://wireminute.com/s/iran-bahrain-radar-claim.html">Iran Says It Destroyed a US Radar in Bahrain. Washington Says Both Drones Were Shot Down</a></li>
+        <li><a href="https://wireminute.com/s/faa-nationwide-ground-stop.html">Nationwide Ground Stop Over as US Flights Start Moving Again</a></li>
+        <li><a href="https://wireminute.com/s/gaza-nasser-hospital-strike.html">Seven Killed as Strike Hits Gaza's Nasser Hospital, Knocking Out Its Surgery Wing</a></li>
+        <li><a href="https://wireminute.com/s/petrol-price-cut-rs2.html">Petrol Cut by Rs2 to Rs330 a Litre in Ninth Straight Reduction; Diesel Unchanged at Rs360</a></li>
+        <li><a href="https://wireminute.com/s/pope-leo-chiclayo-homecoming.html">A Million People Line the Streets as Pope Leo Comes Home to Chiclayo</a></li>
+        <li><a href="https://wireminute.com/s/new-orleans-tanker-riverboat-collision.html">Thirty-Two Taken to Hospital After Tanker Rams Docked Riverboat in New Orleans</a></li>
+        <li><a href="https://wireminute.com/s/nvidia-leadership-washington-chip-row.html">Nvidia Hunts for a New Leader as Washington Fights Over Chip Sales to China</a></li>
+        <li><a href="https://wireminute.com/s/microsoft-outage-second-day.html">Offices Worldwide Rewind to Phones and Fax as Email Outage Drags Into a Second Day</a></li>
+        <li><a href="https://wireminute.com/s/north-korea-deepfake-crypto-theft.html">Fake Video Calls, Real Losses: How a Deepfake Trap Drained $400 Million in Crypto</a></li>
+      </ul>
+      <!--TOPSTORIES:END-->
     </div>
     <div class="copy">
       <span>© <span id="year"></span> WireMinute. All rights reserved.</span>
@@ -1068,6 +1118,10 @@ function renderArticle(id, keepScroll){
     pts.map(function(p){ return '<li>' + esc(p) + '</li>'; }).join("") +
     '</ul></div>' +
     '<div class="art-actions"><button type="button" id="shareBtn">Share this story</button><span class="time" id="shareMsg"></span></div>' +
+    '<div class="share-row" aria-label="Share this story"><span class="share-label">Share:</span>' +
+    '<a class="share-link" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(articleUrl(id)) + '">Facebook</a>' +
+    '<a class="share-link" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?url=' + encodeURIComponent(articleUrl(id)) + '&text=' + encodeURIComponent(s.title) + '">X</a>' +
+    '<a class="share-link" target="_blank" rel="noopener" href="https://wa.me/?text=' + encodeURIComponent(s.title + ' ' + articleUrl(id)) + '">WhatsApp</a></div>' +
     /* Photo credit (a CC licence condition) sits quietly at the very
        bottom of the article, small and muted — never under the hero. */
     (s.credit ? '<p class="imgcredit">' + esc(s.credit) + '</p>' : '') +
