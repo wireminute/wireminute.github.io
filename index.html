@@ -321,6 +321,7 @@ footer .topstories a:hover{text-decoration:underline}
       <h3>Top Stories</h3>
       <!--TOPSTORIES:START-->
       <ul>
+        <li><a href="https://wireminute.com/s/us-warns-americans-saudi-arabia-houthi-threat.html">US Warns Americans in Saudi Arabia of Rising Houthi Attack Threat as Two Drones Are Downed</a></li>
         <li><a href="https://wireminute.com/s/france-protests-fifth-saturday-paris.html">France's Fifth Saturday of Protests Draws 106,000 in Lowest Turnout Yet</a></li>
         <li><a href="https://wireminute.com/s/balochistan-ibo-eight-killed-two-martyred.html">Two Soldiers Martyred in Drone Attack as Eight Militants Killed in Balochistan Raids</a></li>
         <li><a href="https://wireminute.com/s/italy-meta-fine.html">Italy Fines Meta €805 Million Over Facebook Photo Access Without Consent</a></li>
@@ -466,6 +467,24 @@ var PUBLISHER_NAME_RE = new RegExp("\\b(?:" + PUBLISHER_ALT + ")\\b", "i");
 /* WireMinute original reporting: our own articles, written in-house.
    They lead the site; the live feed below them is only a headline stream. */
 var ORIGINALS = [
+ {
+  "slug": "us-warns-americans-saudi-arabia-houthi-threat",
+  "publishedAt": "2026-11-14T18:47:00Z",
+  "lede": "The United States has warned Americans across the Middle East to stay alert after Houthi attacks on Saudi Arabia, as the Saudi-led coalition said it shot down two drones headed for Riyadh and the south on Saturday.",
+  "body": [
+   "The United States mission in Saudi Arabia issued a nationwide security alert on Saturday urging Americans across the Middle East to exercise heightened vigilance, warning of an increased threat of armed attacks by the Houthis and of Iranian efforts to target American officials in the region. The alert, dated 13 November, said Houthi attacks on civilian airports and other critical infrastructure had already caused civilian casualties and severe travel disruption, and warned the hostilities could spread rapidly.",
+   "The Saudi-led coalition said on Saturday it had intercepted and destroyed two drones launched by the Houthis towards Riyadh and the kingdom's southern regions. The alert noted that the State Department ordered non-emergency government employees and their families to leave Saudi Arabia on 23 October, and that American government staff now need special authorisation to use any airport in the country."
+  ],
+  "keyPoints": [
+   "The US mission issued a nationwide alert urging heightened vigilance over an increased threat of Houthi attacks and Iranian efforts to target American officials in the region.",
+   "The Saudi-led coalition said it intercepted and destroyed two Houthi drones launched towards Riyadh and the southern regions on Saturday.",
+   "Non-emergency US government staff and their families were ordered to leave Saudi Arabia on 23 October, and American officials now need special permission to use any airport in the country."
+  ],
+  "img": "images/thumb-us-warns-americans-saudi-arabia-houthi-threat.jpg",
+  "credit": "Photo: B.alotaby, CC BY-SA 4.0, via Wikimedia Commons",
+  "title": "US Warns Americans in Saudi Arabia of Rising Houthi Attack Threat as Two Drones Are Downed",
+  "sec": "world"
+ },
  {
   "slug": "france-protests-fifth-saturday-paris",
   "publishedAt": "2026-11-14T17:58:00Z",
@@ -1992,6 +2011,7 @@ function parseFeed(xmlText, feed){
     var title = itemText(it, "title").replace(/\s+/g, " ").trim();
     if (!title) continue;
     if (feed.strip) title = title.replace(/\s+-\s+[^-]{2,40}$/, "").trim();
+    if (feed.strip) title = title.replace(/\s+-\s+(?:www\.)?[\w-]+\.[a-z]{2,}(?:\.[\w-]+)*$/i, "").trim(); /* watchdog fix 2026-11-14: hyphenated publisher domains (www.daily-sun.com) survive the [^-] strip above */
     title = cleanTitleText(title) || decodeEntities(title).replace(/\s+/g, " ").trim();
     if (isSpamTitle(title)) continue; /* watchdog fix 2026-11-14: aggregator-bait title, never surfaces */
     /* The feed item's own article URL is deliberately never read or used:
