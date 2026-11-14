@@ -2565,12 +2565,12 @@ function refreshOpenArticle(){
 /* ---------- Instant first paint: localStorage cache / snapshot ---------- */
 function hydrateStories(list){
   return (list || []).map(function(s){
-    return { id: s.id, title: cleanTitleText(s.title) || s.title || "", time: new Date(s.time), summary: cleanBodyText(s.summary), full: cleanBodyText(s.full), img: s.img || "", sec: normSec(s.sec) };
+    return { id: s.id, title: cleanTitleText(s.title) || s.title || "", time: new Date(s.time), summary: cleanBodyText(s.summary), full: cleanBodyText(s.full), img: s.img || "", sec: normSec(s.sec), credit: s.credit || "" };
   }).filter(isFreshStory).filter(function(s){ return !isSpamTitle(s.title); }); /* watchdog fix 2026-11-14: aggregator-bait title, never surfaces */
 }
 function serializeStories(list){
   return list.map(function(s){
-    return { id: s.id, title: s.title, time: s.time.toISOString(), summary: s.summary, full: s.full, img: s.img, sec: s.sec };
+    return { id: s.id, title: s.title, time: s.time.toISOString(), summary: s.summary, full: s.full, img: s.img, sec: s.sec, credit: s.credit || "" };
   });
 }
 function saveCache(){
