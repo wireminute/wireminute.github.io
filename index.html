@@ -650,6 +650,10 @@ function cleanText(raw){
   }
   s = s.replace(/\s+/g, " ").trim();
   if (isJunkText(s)) return "";
+  /* Known source typo: Al Jazeera's own wire headline reads "grounds
+     all fights" — the FAA grounds flights, not fights. Fix the words,
+     never the story, so the typo cannot reach the ticker or a card. */
+  s = s.replace(/\b[gG]rounds all [fF]ights\b/g, function(m){ return (m.charAt(0) === "G" ? "Grounds" : "grounds") + " all flights"; });
   return s;
 }
 function stripTags(html){ return cleanText(html); }
@@ -849,6 +853,13 @@ function parseFeed(xmlText, feed){
 }
 function render(){
   var pool = currentSec === "latest" ? allStories : allStories.filter(function(s){ return s.sec === currentSec; });
+  /* Visual rule: the lead and the grid are photo surfaces — a story
+     with no photo may still appear in the ticker, the live rail and
+     search, but it never renders as a brand-card placeholder here.
+     Fall back to the full pool only if a section has no photo at all,
+     so a section can never go blank. */
+  var visualPool = pool.filter(function(s){ return !!s.img; });
+  if (visualPool.length) pool = visualPool;
   var leadBox = document.getElementById("leadBox");
   var grid = document.getElementById("storyGrid");
   var status = document.getElementById("statusLine");
@@ -1038,6 +1049,10 @@ function renderArticle(id, keepScroll){
   var pts = keyPoints(s);
   var rel = ORIGINALS.concat(allStories).filter(function(r){ return r.sec === s.sec && r.id !== id; }).slice(0, 4);
   if (rel.length < 2) rel = rel.concat(ORIGINALS.concat(allStories).filter(function(r){ return r.id !== id && rel.indexOf(r) === -1; }).slice(0, 4 - rel.length));
+  /* Related cards are photo surfaces too: prefer stories with a real
+     photo, falling back only when too few exist. */
+  var relVisual = rel.filter(function(r){ return !!r.img; });
+  if (relVisual.length >= 2) rel = relVisual.slice(0, 4);
   var html =
     '<article class="art">' +
     '<img class="art-hero" decoding="async" src="' + esc(s.img || PLACEHOLDER) + '" alt="' + esc(s.title) + '" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER + '\'">' +
