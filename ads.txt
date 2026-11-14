@@ -1,1 +1,1 @@
-# ads.txt — WireMinute (publisher ID to be added after AdSense approval)
+google.com, pub-9437014175855033, DIRECT, f08c47fec0942fa0
