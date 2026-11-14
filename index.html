@@ -1769,9 +1769,15 @@ function loadNews(){
 var searchOverlay = document.getElementById("searchOverlay");
 var searchInput = document.getElementById("searchInput");
 var searchResults = document.getElementById("searchResults");
+/* Search keeps the baked snapshot stories findable even after they
+   rotate out of the live feeds. storyCache already keeps them, but
+   searchPool only looked at ORIGINALS + allStories, so a story like
+   "Microsoft 'deeply sorry'" returned "No results" hours after it
+   left the feeds. Hydrated once, 48h-filtered like the boot data. */
+var snapshotStories = hydrateStories(INITIAL_STORIES);
 function searchPool(){
   var seen = {}, pool = [];
-  ORIGINALS.concat(allStories).forEach(function(s){
+  ORIGINALS.concat(snapshotStories).concat(allStories).forEach(function(s){
     if (!s || !s.id || seen[s.id]) return;
     seen[s.id] = 1;
     pool.push(s);
