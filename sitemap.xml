@@ -61,6 +61,12 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://wireminute.com/s/estonia-closes-russia-border-crossings-december-1.html</loc>
+    <lastmod>2026-11-15T18:45:00Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://wireminute.com/s/somalia-recovery-international-support-un-mission-closes.html</loc>
     <lastmod>2026-11-15T17:29:00Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -99,6 +105,12 @@
   <url>
     <loc>https://wireminute.com/s/zelenskyy-starshield-restrictions-russia-energy-attacks.html</loc>
     <lastmod>2026-11-15T13:58:14Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wireminute.com/s/iran-bahrain-radar-claim.html</loc>
+    <lastmod>2026-11-15T13:06:00Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -193,12 +205,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wireminute.com/s/iran-bahrain-radar-claim.html</loc>
-    <lastmod>2026-11-15T13:06:00Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://wireminute.com/s/ups-copa-miami-collision.html</loc>
     <lastmod>2026-11-15T05:31:00Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -259,6 +265,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wireminute.com/s/gaza-nasser-hospital-strike.html</loc>
+    <lastmod>2026-11-15T01:22:00Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://wireminute.com/s/men-march-bern-violence-women.html</loc>
     <lastmod>2026-11-15T01:02:00Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -277,8 +289,20 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wireminute.com/s/netanyahu-eisenkot-unity-call.html</loc>
+    <lastmod>2026-11-14T23:16:00Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://wireminute.com/s/peoria-ethanol-plant-bomb-evacuations-lifted.html</loc>
     <lastmod>2026-11-14T22:56:00Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wireminute.com/s/new-orleans-tanker-riverboat-collision.html</loc>
+    <lastmod>2026-11-14T22:45:00Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -322,6 +346,12 @@
     <loc>https://wireminute.com/s/balochistan-ibo-eight-killed-two-martyred.html</loc>
     <lastmod>2026-11-14T17:19:00Z</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wireminute.com/s/iran-lng-tanker-hormuz.html</loc>
+    <lastmod>2026-11-14T16:53:00Z</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
@@ -433,6 +463,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wireminute.com/s/hungary-20m-cash-graft-probe.html</loc>
+    <lastmod>2026-11-14T09:26:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wireminute.com/s/faa-nationwide-ground-stop.html</loc>
+    <lastmod>2026-11-14T09:15:00Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://wireminute.com/s/eu-five-power-ukraine-talks.html</loc>
     <lastmod>2026-11-14T08:56:00Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -511,12 +553,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wireminute.com/s/iran-lng-tanker-hormuz.html</loc>
-    <lastmod>2026-11-14T16:53:00Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://wireminute.com/s/ukraine-1200-drone-barrage-russia.html</loc>
     <lastmod>2026-11-14T02:37:00Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -577,18 +613,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wireminute.com/s/faa-nationwide-ground-stop.html</loc>
-    <lastmod>2026-11-14T09:15:00Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wireminute.com/s/gaza-nasser-hospital-strike.html</loc>
-    <lastmod>2026-11-15T01:22:00Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://wireminute.com/s/petrol-price-cut-rs2.html</loc>
     <lastmod>2026-11-13T21:53:55Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -598,12 +622,6 @@
     <loc>https://wireminute.com/s/pope-leo-chiclayo-homecoming.html</loc>
     <lastmod>2026-11-13T21:46:40Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wireminute.com/s/new-orleans-tanker-riverboat-collision.html</loc>
-    <lastmod>2026-11-14T22:45:00Z</lastmod>
-    <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
@@ -622,18 +640,6 @@
     <loc>https://wireminute.com/s/north-korea-deepfake-crypto-theft.html</loc>
     <lastmod>2026-11-13T20:33:00Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wireminute.com/s/hungary-20m-cash-graft-probe.html</loc>
-    <lastmod>2026-11-14T09:26:00Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wireminute.com/s/netanyahu-eisenkot-unity-call.html</loc>
-    <lastmod>2026-11-14T23:16:00Z</lastmod>
-    <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
 </urlset>
