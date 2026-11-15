@@ -3085,6 +3085,7 @@ function relTime(d){
 }
 function clockTime(d){
   if (!(d instanceof Date) || isNaN(d.getTime())) return "";
+  if (d.getTime() > Date.now()) d = new Date(); // watchdog fix 2026-11-16: feed pubDates can run ahead of the reader clock (e.g. BBC item shown as 10:17 PM at ~21:27 PKT); never display a future clock time
   var hh = d.getHours(), mm = d.getMinutes();
   var ap = hh >= 12 ? "PM" : "AM"; hh = hh % 12; if (hh === 0) hh = 12;
   return hh + ":" + (mm < 10 ? "0" : "") + mm + " " + ap;
@@ -3921,6 +3922,15 @@ render();
 route();
 loadNews();
 setInterval(loadNews, 60000);
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('/sw.js').catch(function (err) {
+      console.warn('WireMinute: service worker registration failed:', err);
+    });
+  });
+}
 </script>
 </body>
 </html>
