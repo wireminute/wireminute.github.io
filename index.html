@@ -2593,7 +2593,7 @@ function render(){
       (s.summary ? '<p>' + esc(s.summary) + '</p>' : '') +
       '<div class="meta"><span class="cat-chip">' + secName(s.sec) + '</span><span class="time">' + relTime(s.time) + '</span></div></article>';
   }).join("");
-  status.textContent = "Showing the latest " + SECNAMES[currentSec].toLowerCase() + " headlines. This page refreshes itself every minute.";
+  status.textContent = (currentSec === "latest" ? "Showing the latest headlines." : "Showing the latest " + SECNAMES[currentSec].toLowerCase() + " headlines.") + " This page refreshes itself every minute."; /* watchdog fix 2026-11-15: was "Showing the latest latest headlines." on Latest */
   /* Ticker: newest headlines, text only */
   var tick = allStories.slice(0, 10).map(function(s){ return esc(s.title); }).join("</span><span>");
   var track = document.getElementById("tickerTrack");
