@@ -2455,9 +2455,15 @@ function renderArticle(id, keepScroll){
   var rel = ORIGINALS.concat(allStories).filter(function(r){ return r.sec === s.sec && r.id !== id; }).slice(0, 4);
   if (rel.length < 2) rel = rel.concat(ORIGINALS.concat(allStories).filter(function(r){ return r.id !== id && rel.indexOf(r) === -1; }).slice(0, 4 - rel.length));
   /* Related cards are photo surfaces too: prefer stories with a real
-     photo, falling back only when too few exist. */
+     photo, falling back only when too few exist. Top up with any
+     photo-bearing story (any section) so the rail never shows the
+     red W placeholder while photo stories exist elsewhere. */
   var relVisual = rel.filter(function(r){ return !!r.img; });
-  if (relVisual.length >= 2) rel = relVisual.slice(0, 4);
+  if (relVisual.length < 4) {
+    var relPool = ORIGINALS.concat(allStories).filter(function(r){ return r.id !== id && !!r.img && relVisual.indexOf(r) === -1; });
+    relVisual = relVisual.concat(relPool.slice(0, 4 - relVisual.length));
+  }
+  if (relVisual.length) rel = relVisual.slice(0, 4);
   var html =
     '<article class="art">' +
     '<img class="art-hero" decoding="async" src="' + esc(s.img || PLACEHOLDER) + '" alt="' + esc(s.title) + '" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER + '\'">' +
