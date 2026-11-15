@@ -61,6 +61,12 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://wireminute.com/s/iran-bahrain-radar-claim.html</loc>
+    <lastmod>2026-11-15T05:45:00Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://wireminute.com/s/ups-copa-miami-collision.html</loc>
     <lastmod>2026-11-15T05:31:00Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -435,12 +441,6 @@
   <url>
     <loc>https://wireminute.com/s/dublin-merrion-square-device.html</loc>
     <lastmod>2026-11-13T22:22:51Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wireminute.com/s/iran-bahrain-radar-claim.html</loc>
-    <lastmod>2026-11-13T22:08:54Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
