@@ -43,19 +43,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wireminute.com/#/about</loc>
+    <loc>https://wireminute.com/about.html</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://wireminute.com/#/privacy</loc>
+    <loc>https://wireminute.com/privacy.html</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://wireminute.com/#/contact</loc>
+    <loc>https://wireminute.com/contact.html</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
