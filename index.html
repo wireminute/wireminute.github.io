@@ -3725,12 +3725,29 @@ function parseFeed(xmlText, feed){
   }
   return out;
 }
+/* Owner order (2026-11-16): ONE time series for the whole page - the
+   newest story of any kind (WireMinute Original or wire story) sits on
+   top, the next older below it, then older still. Originals no longer
+   render as a separate block above the stream (that is what pushed the
+   latest wire story into the middle of the page); they merge into the
+   stream and keep their "WireMinute Original" chip on their cards. */
+function mergedStories(){
+  var seen = {}, out = [];
+  allStories.concat(ORIGINALS).forEach(function(s){
+    if (!s || !s.id || seen[s.id]) return;
+    seen[s.id] = 1;
+    out.push(s);
+  });
+  out.sort(function(a, b){ return b.time - a.time; });
+  return out;
+}
 function render(){
-  var pool = currentSec === "latest" ? allStories.slice() : allStories.filter(function(s){ return s.sec === currentSec; });
-  /* Owner rule (2026-11-14): every category shows the latest post on
-     top, then the one older than it, then older still — sort explicitly
-     on every render so the order never depends on how the stream was
-     assembled (boot cache, snapshot merge or live feeds). */
+  var mergedAll = mergedStories();
+  var pool = currentSec === "latest" ? mergedAll.slice() : mergedAll.filter(function(s){ return s.sec === currentSec; });
+  /* Owner rule (2026-11-14; one merged series 2026-11-16): the latest
+     story on top, then the one older than it, then older still - sort
+     explicitly on every render so the order never depends on how the
+     stream was assembled (boot cache, snapshot merge or live feeds). */
   pool.sort(function(a, b){ return b.time - a.time; });
   /* Visual rule: the lead and the grid are photo surfaces — a story
      with no photo may still appear in the ticker, the live rail and
@@ -3751,7 +3768,7 @@ function render(){
        e.g. Technology showed its 4 tech Originals with "No stories in
        this section yet" underneath. Only claim an empty section when
        it is genuinely empty of Originals too. */
-    var hasOrig = !!document.getElementById("origBox").innerHTML;
+    var hasOrig = ORIGINALS.some(function(s){ return currentSec === "latest" || s.sec === currentSec; });
     status.textContent = !allStories.length ? "Could not load news just now. Retrying automatically every minute…"
       : hasOrig ? (currentSec === "latest" ? "Showing the latest headlines." : "Showing the latest " + SECNAMES[currentSec].toLowerCase() + " headlines.") + " This page refreshes itself every minute."
       : "No stories in this section yet — new ones arrive every minute.";
@@ -3764,25 +3781,25 @@ function render(){
   leadBox.innerHTML =
     '<article class="lead"><a href="#/story/' + lead.id + '">' +
     '<img decoding="async" src="' + esc(lead.img || PLACEHOLDER) + '" alt="' + esc(lead.title) + '" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER + '\'">' +
-    '<div class="kick"><span class="cat-chip">' + secName(lead.sec) + '</span></div>' +
+    '<div class="kick"><span class="cat-chip">' + secName(lead.sec) + '</span>' + (lead.original ? '<span class="own-chip">WireMinute Original</span>' : '') + '</div>' +
     '<h2>' + esc(lead.title) + '</h2></a>' +
     (lead.summary ? '<p>' + esc(lead.summary) + '</p>' : '') +
     '<div class="meta"><span class="time">' + relTime(lead.time) + ' · ' + clockTime(lead.time) + '</span></div></article>';
   grid.innerHTML = rest.map(function(s){
     return '<article class="card"><a href="#/story/' + s.id + '">' +
       '<img loading="lazy" decoding="async" src="' + esc(s.img || PLACEHOLDER) + '" alt="' + esc(s.title) + '" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER + '\'">' +
-      '<div class="kick"><span class="cat-chip">' + secName(s.sec) + '</span></div>' +
+      '<div class="kick"><span class="cat-chip">' + secName(s.sec) + '</span>' + (s.original ? '<span class="own-chip">WireMinute Original</span>' : '') + '</div>' +
       '<h3>' + esc(s.title) + '</h3></a>' +
       (s.summary ? '<p>' + esc(s.summary) + '</p>' : '') +
       '<div class="meta"><span class="time">' + relTime(s.time) + '</span></div></article>';
   }).join("");
   status.textContent = (currentSec === "latest" ? "Showing the latest headlines." : "Showing the latest " + SECNAMES[currentSec].toLowerCase() + " headlines.") + " This page refreshes itself every minute."; /* watchdog fix 2026-11-15: was "Showing the latest latest headlines." on Latest */
   /* Ticker: newest headlines, text only */
-  var tick = allStories.slice(0, 10).map(function(s){ return esc(s.title); }).join("</span><span>");
+  var tick = mergedAll.slice(0, 10).map(function(s){ return esc(s.title); }).join("</span><span>");
   var track = document.getElementById("tickerTrack");
   track.innerHTML = "<span>" + tick + "</span><span>" + tick + "</span>";
   /* Live rail: newest 15 across all sections */
-  document.getElementById("liveRail").innerHTML = allStories.slice(0, 15).map(function(s){
+  document.getElementById("liveRail").innerHTML = mergedAll.slice(0, 15).map(function(s){
     return '<div class="live-item"><span class="lt">' + clockTime(s.time) + '</span><span class="pdot"></span>' +
       '<a href="#/story/' + s.id + '"><span class="lh">' + esc(s.title) + '</span></a></div>';
   }).join("");
@@ -3808,7 +3825,7 @@ function renderHomeBlocks(){
   if (!box) return;
   if (currentSec !== "latest"){ box.innerHTML = ""; return; }
   var html = "";
-  var world = allStories.filter(function(s){ return s.sec === "world" && !!s.img; }).slice(0, 4);
+  var world = mergedStories().filter(function(s){ return s.sec === "world" && !!s.img; }).slice(0, 4);
   if (world.length >= 2){
     var w0 = world[0];
     html += '<section class="secblock" aria-label="World news"><div class="secblock-head"><h2>World</h2><a class="secblock-more" href="#/section/world">More World news</a></div>' +
@@ -3833,7 +3850,9 @@ function renderHomeBlocks(){
           '<div class="meta"><span class="time">' + relTime(s.time) + '</span></div></article>';
       }).join("") + '</div></section>';
   }
-  var ana = ORIGINALS.slice().sort(function(a, b){ return b.time - a.time; }).slice(9, 13);
+  var gridIds = {};
+  mergedStories().slice(0, 25).forEach(function(s){ gridIds[s.id] = 1; });
+  var ana = ORIGINALS.slice().sort(function(a, b){ return b.time - a.time; }).filter(function(s){ return !gridIds[s.id]; }).slice(0, 4);
   if (ana.length >= 2){
     html += '<section class="secblock" aria-label="Analysis"><div class="secblock-head"><h2>Analysis</h2></div>' +
       '<div class="anagrid">' + ana.map(function(s){
@@ -3855,21 +3874,17 @@ function origCard(s){
     '<div class="meta"><span class="time">' + relTime(s.time) + '</span></div></article>';
 }
 function renderOrig(){
+  /* Retired 2026-11-16 (owner order): Originals used to render here as
+     a separate "Top Stories" block above the wire stream, which pushed
+     newer wire stories below older Originals - the latest story showed
+     in the middle of the page. Originals now merge into the single
+     time-sorted stream in render() via mergedStories() and keep their
+     "WireMinute Original" chip there. This box stays empty; the static
+     Top Stories list in the page footer is unaffected. */
   var box = document.getElementById("origBox");
-  if (!box) return;
-  var list = ORIGINALS.filter(function(s){ return currentSec === "latest" || s.sec === currentSec; }).sort(function(a, b){ return b.time - a.time; }).slice(0, 9); /* Top Stories: strictly newest-first (owner rule 2026-11-14 — latest on top, then older, then older), then the 9 newest originals; search still covers all embedded originals. */
-  if (!list.length){ box.innerHTML = ""; return; }
-  var first = list[0];
-  var html = '<h2 class="orig-head">Top Stories</h2>' +
-    '<article class="lead"><a href="#/story/' + first.id + '">' +
-    '<img fetchpriority="high" decoding="async" src="' + esc(first.img || PLACEHOLDER) + '" alt="' + esc(first.title) + '" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER + '\'">' +
-    '<div class="kick"><span class="cat-chip">' + secName(first.sec) + '</span><span class="own-chip">WireMinute Original</span></div>' +
-    '<h2>' + esc(first.title) + '</h2></a>' +
-    '<p>' + esc(first.lede) + '</p>' +
-    '<div class="meta"><span class="time">' + relTime(first.time) + ' \u00b7 ' + clockTime(first.time) + '</span></div></article>';
-  if (list.length > 1) html += '<div class="grid">' + list.slice(1).map(origCard).join("") + '</div>';
-  box.innerHTML = html;
+  if (box) box.innerHTML = "";
 }
+
 /* ---------- Internal article view (readers never leave WireMinute) ---------- */
 function keyPoints(s){
   if (s.keyPoints && s.keyPoints.length) return s.keyPoints.slice(0, 4);
