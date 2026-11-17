@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Nov 2026 05:19:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 05:51:00 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Japan Scrambles Fighters as Suspected Russian Jets Breach Its Airspace</title>
+      <link>https://wireminute.com/s/japan-russian-aircraft-airspace-violation-okinoshima.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/japan-russian-aircraft-airspace-violation-okinoshima.html</guid>
+      <description>Japan scrambled fighter jets and lodged a formal protest with Moscow after two planes thought to be Russian crossed into its airspace off the south-western coast early on Tuesday, the first such breach in more than two years.</description>
+      <pubDate>Tue, 17 Nov 2026 05:51:00 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-japan-russian-aircraft-airspace-violation-okinoshima.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Imran Khan Tells Judges He Fears He May Not Survive Prison Without Urgent Care</title>
       <link>https://wireminute.com/s/imran-khan-medical-plea-judges.html</link>
@@ -107,10 +116,10 @@
       <enclosure url="https://wireminute.com/images/thumb-third-us-carrier-roosevelt-middle-east.jpg" type="image/jpeg" />
     </item>
     <item>
-      <title>Russian Missiles Hit Kyiv&apos;s Two Main Bridges as Overnight Attack Disrupts Water and Heat</title>
+      <title>Kyiv Closes Two Main Bridges After Russian Missile Strikes, Second Attack Hits Overnight</title>
       <link>https://wireminute.com/s/kyiv-bridges-ballistic-attack.html</link>
       <guid isPermaLink="true">https://wireminute.com/s/kyiv-bridges-ballistic-attack.html</guid>
-      <description>Russian ballistic missiles struck Kyiv&apos;s North and South bridges across the Dnipro River late on Monday night, the city&apos;s mayor said, in an overnight attack that damaged critical infrastructure and cut water and heating in parts of the capital.</description>
+      <description>Kyiv has closed its two main bridges across the Dnipro River and suspended metro and trolleybus services after Russian ballistic missiles struck both crossings overnight, in an attack that damaged critical infrastructure and cut water and heating in parts of the capital.</description>
       <pubDate>Tue, 17 Nov 2026 01:10:00 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-kyiv-bridges-ballistic-attack.jpg" type="image/jpeg" />
@@ -267,15 +276,6 @@
       <pubDate>Mon, 16 Nov 2026 11:12:36 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-two-mass-shootings-south-africa-17-dead.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Hasina Says She Will Return to Bangladesh in December Despite Death Sentence</title>
-      <link>https://wireminute.com/s/hasina-vows-december-return-bangladesh-death-sentence.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/hasina-vows-december-return-bangladesh-death-sentence.html</guid>
-      <description>Bangladesh&apos;s ousted prime minister Sheikh Hasina says she will return home in December, even though a court has sentenced her to death and the government in Dhaka has said she would face execution on arrival.</description>
-      <pubDate>Mon, 16 Nov 2026 10:56:58 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-hasina-vows-december-return-bangladesh-death-sentence.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
