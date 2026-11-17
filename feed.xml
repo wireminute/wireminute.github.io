@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Nov 2026 06:45:22 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 07:06:00 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vance Vows Iran War Will Not Become a Forever War, Denies Rift With Trump</title>
+      <link>https://wireminute.com/s/vance-trump-no-forever-war-iran.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/vance-trump-no-forever-war-iran.html</guid>
+      <description>US Vice President JD Vance has said President Donald Trump will not allow the war with Iran to become a long, open-ended commitment, insisting the conflict will be brought to a close rather than drag on for years.</description>
+      <pubDate>Tue, 17 Nov 2026 07:06:00 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-vance-trump-no-forever-war-iran.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Ukraine Says Russia Struck Rescue Teams After Double-Tap Attack Killed 72</title>
       <link>https://wireminute.com/s/ukraine-komyshuvakha-double-tap-rescue-strikes-72-killed.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Mon, 16 Nov 2026 11:56:00 GMT</pubDate>
       <category>Business</category>
       <enclosure url="https://wireminute.com/images/thumb-intel-shareholders-sue-pc-sales-slowdown.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Hong Kong Leader John Lee Heads to Shenzhen for APEC Summit as Asia-Pacific Leaders Gather</title>
-      <link>https://wireminute.com/s/john-lee-apec-summit-shenzhen-trip.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/john-lee-apec-summit-shenzhen-trip.html</guid>
-      <description>Hong Kong leader John Lee Ka-chiu will travel to Shenzhen on Tuesday for the Asia-Pacific Economic Cooperation summit, joining leaders from across the region for two days of business talks before the main leaders&apos; meeting on Thursday.</description>
-      <pubDate>Mon, 16 Nov 2026 11:45:00 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-john-lee-apec-summit-shenzhen-trip.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
