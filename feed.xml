@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Nov 2026 04:06:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 04:40:00 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Palestinian Woman Killed, 10 Wounded in Settler Gunfire Near Jericho</title>
+      <link>https://wireminute.com/s/palestinian-woman-killed-jericho-settler-gunfire.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/palestinian-woman-killed-jericho-settler-gunfire.html</guid>
+      <description>A 60-year-old Palestinian woman was killed and 10 other people were wounded by gunfire from Israeli settlers in the village of Ad-Duyuk al-Tahta, west of Jericho, on Monday evening, Palestinian officials and hospital staff said.</description>
+      <pubDate>Tue, 17 Nov 2026 04:40:00 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-palestinian-woman-killed-jericho-settler-gunfire.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Wheat Ship Sinks Off Bulgaria After Crew Reports Sea-Drone Strikes</title>
       <link>https://wireminute.com/s/cargo-ship-sinks-off-bulgaria-black-sea.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Mon, 16 Nov 2026 10:43:38 GMT</pubDate>
       <category>Technology</category>
       <enclosure url="https://wireminute.com/images/thumb-jordan-bans-telegram-national-security.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Drug-Resistant Infections Could Kill 39 Million People in 25 Years, WHO Warns</title>
-      <link>https://wireminute.com/s/who-antimicrobial-resistance-39-million-deaths.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/who-antimicrobial-resistance-39-million-deaths.html</guid>
-      <description>The World Health Organization has warned that infections which no longer respond to antibiotics and other medicines may be linked to more than 39 million deaths across the coming 25 years, and could put routine surgery and childbirth at risk.</description>
-      <pubDate>Mon, 16 Nov 2026 10:28:25 GMT</pubDate>
-      <category>Health</category>
-      <enclosure url="https://wireminute.com/images/thumb-who-antimicrobial-resistance-39-million-deaths.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
