@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Nov 2026 04:40:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 05:19:00 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Imran Khan Tells Judges He Fears He May Not Survive Prison Without Urgent Care</title>
+      <link>https://wireminute.com/s/imran-khan-medical-plea-judges.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/imran-khan-medical-plea-judges.html</guid>
+      <description>Pakistan&apos;s jailed former prime minister Imran Khan has written to the country&apos;s most senior judges asking for urgent medical treatment for himself and his wife, warning that his health has deteriorated so badly in prison that he fears he may not survive.</description>
+      <pubDate>Tue, 17 Nov 2026 05:19:00 GMT</pubDate>
+      <category>Pakistan</category>
+      <enclosure url="https://wireminute.com/images/thumb-imran-khan-medical-plea.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Palestinian Woman Killed, 10 Wounded in Settler Gunfire Near Jericho</title>
       <link>https://wireminute.com/s/palestinian-woman-killed-jericho-settler-gunfire.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Mon, 16 Nov 2026 10:56:58 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-hasina-vows-december-return-bangladesh-death-sentence.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Jordan Blocks Telegram App, Pointing to Extremist Content and National Security</title>
-      <link>https://wireminute.com/s/jordan-bans-telegram-national-security.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/jordan-bans-telegram-national-security.html</guid>
-      <description>Jordan has moved to block the Telegram messaging app across the kingdom, with security officials saying the step is needed to stop the spread of illegal and extremist material and to protect national security.</description>
-      <pubDate>Mon, 16 Nov 2026 10:43:38 GMT</pubDate>
-      <category>Technology</category>
-      <enclosure url="https://wireminute.com/images/thumb-jordan-bans-telegram-national-security.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
