@@ -5,8 +5,26 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Nov 2026 03:06:24 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 03:33:00 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Iran Rules Out Nuclear Inspections Until War Ends, Deputy Minister Says</title>
+      <link>https://wireminute.com/s/iran-refuses-iaea-inspectors-war-ends.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/iran-refuses-iaea-inspectors-war-ends.html</guid>
+      <description>Iran will not allow United Nations inspectors into its damaged nuclear facilities until the war in the Middle East has permanently ended and the United States meets its conditions, a senior Iranian official said.</description>
+      <pubDate>Tue, 17 Nov 2026 03:33:00 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-iran-refuses-iaea-inspectors-war-ends.jpg" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Trump’s Advisers Split Over China as Xi Summit Nears, With Nvidia Scandal Fuelling the Feud</title>
+      <link>https://wireminute.com/s/trump-advisers-split-china-xi-summit.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/trump-advisers-split-china-xi-summit.html</guid>
+      <description>President Donald Trump’s top advisers have spent the past week feuding over China policy, exposing a deep split inside the administration days before his meeting with Xi Jinping, as fallout from the Nvidia chip scandal continues to shake the White House.</description>
+      <pubDate>Tue, 17 Nov 2026 03:33:00 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-trump-advisers-split-china-xi-summit.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Kushner Says Progress Made Toward Ukraine Deal, Warns Hard Choices Remain</title>
       <link>https://wireminute.com/s/kushner-progress-ukraine-talks.html</link>
@@ -258,24 +276,6 @@
       <pubDate>Mon, 16 Nov 2026 09:10:47 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-ahmed-tibi-elected-deputy-speaker-knesset.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Anwar Under Pressure as Malaysian Coalition Suffers Fourth Straight State Poll Defeat</title>
-      <link>https://wireminute.com/s/malaysia-anwar-melaka-election-defeat-pressure.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/malaysia-anwar-melaka-election-defeat-pressure.html</guid>
-      <description>Malaysian Prime Minister Anwar Ibrahim is facing growing pressure over his political future after his coalition lost a fourth straight state election, this time in Melaka, where its rivals won 24 of the 28 seats.</description>
-      <pubDate>Mon, 16 Nov 2026 07:58:00 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-malaysia-anwar-melaka-election-defeat-pressure.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Russian Satellites Are Helping Iran Track US Forces, Analysis Says</title>
-      <link>https://wireminute.com/s/russia-preparing-iran-next-escalation.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/russia-preparing-iran-next-escalation.html</guid>
-      <description>Russian military satellites are giving Iran the intelligence it needs to see an American attack coming and strike back with precision, according to a satellite-tracking project that has followed the spacecraft for eight months.</description>
-      <pubDate>Mon, 16 Nov 2026 07:41:00 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-russia-preparing-iran-next-escalation.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
