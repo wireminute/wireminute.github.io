@@ -5360,6 +5360,7 @@ var openArticleId = null;
 var openPage = null;
 var PAGE_HOME_TITLE = "";
 var openArticleKey = "";
+var lastArticleMin = -1; /* watchdog fix 2026-11-18: minute bucket of the open article's relative time, so it ticks while reading */
 
 function esc(s){ var d = document.createElement("div"); d.textContent = s || ""; return d.innerHTML; }
 /* WireMinute text cleaning: feed descriptions can carry escaped or
@@ -6072,6 +6073,7 @@ function renderArticle(id, keepScroll){
   var y = window.scrollY || 0;
   openArticleId = id;
   openArticleKey = s.title + "|" + (s.full || "") + "|" + (s.summary || "") + "|" + (s.img || "") + "|" + (s.credit || "");
+  lastArticleMin = Math.floor((Date.now() - s.time.getTime()) / 60000);
   applyArticleMeta(s);
   var pts = keyPoints(s);
   var rel = ORIGINALS.concat(allStories).filter(function(r){ return r.sec === s.sec && r.id !== id; }).slice(0, 4);
@@ -6260,7 +6262,13 @@ function refreshOpenArticle(){
   var s = storyCache[openArticleId];
   if (!s) return; /* story left the feed: keep showing the cached copy untouched */
   var key = s.title + "|" + (s.full || "") + "|" + (s.summary || "") + "|" + (s.img || "") + "|" + (s.credit || "");
-  if (key !== openArticleKey) renderArticle(openArticleId, true);
+  if (key !== openArticleKey){ renderArticle(openArticleId, true); return; }
+  /* watchdog fix 2026-11-18: the open article's "X min ago" froze at the
+     value computed when it was opened — only content changes re-rendered.
+     Re-render (scroll preserved) when the minute bucket ticks over, so the
+     article time keeps pace with "Last updated" like the home page does. */
+  var mins = Math.floor((Date.now() - s.time.getTime()) / 60000);
+  if (mins !== lastArticleMin) renderArticle(openArticleId, true);
 }
 
 /* ---------- Instant first paint: localStorage cache / snapshot ---------- */
