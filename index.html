@@ -871,7 +871,7 @@ var ORIGINALS = [
    "The US is massing three carrier strike groups in the region as Tomahawk missile production rises to more than 60 a month."
   ],
   "img": "images/thumb-navy-chief-iran-strain.jpg",
-  "credit": "Photo: Staff Sgt. Hunter Garcia, Public Domain, via Wikimedia Commons",
+  "credit": "",
   "title": "Navy Chief Tells Senators the Iran War Is Straining the Fleet",
   "sec": "world"
  },
@@ -5446,6 +5446,17 @@ function renderArticle(id, keepScroll){
     relVisual = relVisual.concat(relPool.slice(0, 4 - relVisual.length));
   }
   if (relVisual.length) rel = relVisual.slice(0, 4);
+  /* Key Points must add something: when the body is a single sentence,
+     keyPoints() returns that same sentence, so the block would repeat the
+     body verbatim (watchdog fix 2026-11-18: thin feed stories showed the
+     one-sentence body twice — body paragraph + identical bullet). Hide the
+     block in that case only; Originals (explicit multi-point arrays) and
+     multi-sentence stories are unaffected. */
+  var bodyText = (s.original && s.body) ? "" : (s.full || s.summary || "");
+  var normBody = bodyText.replace(/\s+/g, " ").trim();
+  var normPt = function(p){ return p.replace(/\s+/g, " ").trim(); };
+  var kpDup = pts.length === 1 && !!pts[0] && !!normBody && (normBody === normPt(pts[0]) || normBody.indexOf(normPt(pts[0])) === 0 || normPt(pts[0]).indexOf(normBody) === 0);
+  var kpHtml = kpDup ? "" : '<div class="keypoints"><h3>Key points</h3><ul>' + pts.map(function(p){ return '<li>' + esc(p) + '</li>'; }).join("") + '</ul></div>';
   var html =
     '<article class="art">' +
     '<h2 class="art-title">' + esc(s.title) + '</h2>' +
@@ -5457,9 +5468,7 @@ function renderArticle(id, keepScroll){
     '</div>' +
     '<img class="art-hero" decoding="async" src="' + esc(s.img || PLACEHOLDER) + '" alt="' + esc(s.title) + '" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER + '\'">' +
     (s.original && s.body ? '<p class="lede">' + esc(s.lede) + '</p>' + s.body.map(function(p){ return '<p class="full">' + esc(p) + '</p>'; }).join("") : (s.full ? '<p class="full">' + esc(s.full) + '</p>' : (s.summary ? '<p class="full">' + esc(s.summary) + '</p>' : ''))) +
-    '<div class="keypoints"><h3>Key points</h3><ul>' +
-    pts.map(function(p){ return '<li>' + esc(p) + '</li>'; }).join("") +
-    '</ul></div>' +
+    kpHtml +
     '<div class="art-actions"><button type="button" id="shareBtn">Share this story</button><span class="time" id="shareMsg"></span></div>' +
     '<div class="share-row" aria-label="Share this story"><span class="share-label">Share:</span>' +
     '<a class="share-link" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(articleUrl(id)) + '">Facebook</a>' +
