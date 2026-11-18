@@ -409,6 +409,7 @@ footer .topstories a:hover span{text-decoration:underline}
       <!--SECTIONSNAV:END-->
       <!--TOPSTORIES:START-->
       <ul>
+        <li><a href="https://wireminute.com/s/anthropic-founders-multi-billionaires-ipo.html"><img src="images/thumb-anthropic-founders-multi-billionaires-ipo.jpg" alt="" loading="lazy" decoding="async" width="96" height="54"><span>Anthropic's Seven Founders Set to Become Multi-Billionaires as AI Giant Goes Public</span></a></li>
         <li><a href="https://wireminute.com/s/cal-maine-culls-1-8m-birds-bird-flu-florida.html"><img src="images/thumb-cal-maine-culls-1-8m-birds-bird-flu-florida.jpg" alt="" loading="lazy" decoding="async" width="96" height="54"><span>US Egg Giant to Cull 1.8 Million Birds After Bird Flu Hits Florida Farm</span></a></li>
         <li><a href="https://wireminute.com/s/hakeem-jeffries-nominated-house-speaker.html"><img src="images/thumb-hakeem-jeffries-nominated-house-speaker.jpg" alt="" loading="lazy" decoding="async" width="96" height="54"><span>Democrats Choose Jeffries as Speaker Nominee, Clearing Path to Historic First</span></a></li>
         <li><a href="https://wireminute.com/s/iran-mq9-drone-shot-down-hormuz.html"><img src="images/thumb-iran-mq9-drone-shot-down-hormuz.jpg" alt="" loading="lazy" decoding="async" width="96" height="54"><span>Iran Says It Brought Down a US Reaper Drone Near the Strait of Hormuz</span></a></li>
@@ -731,6 +732,10 @@ var currentSec = "latest";
 var lastOk = 0;
 var lastFingerprint = "";
 var storyCache = {};
+/* Watchdog fix 2026-11-18: near-dup alias map — a story dropped from the
+   stream as a reworded duplicate of a kept story keeps a pointer to the
+   surviving copy, so a shared #/story/<old-id> link still opens. */
+var storyAliases = {};
 /* Publisher-name data for the cleaning layer's scrub step (declared
    here, before ORIGINALS, because var assignments are not hoisted and
    the ORIGINALS map below already calls the cleaners). */
@@ -739,6 +744,27 @@ var PUBLISHER_NAME_RE = new RegExp("\\b(?:" + PUBLISHER_ALT + ")\\b", "i");
 /* WireMinute original reporting: our own articles, written in-house.
    They lead the site; the live feed below them is only a headline stream. */
 var ORIGINALS = [
+ {
+  "slug": "anthropic-founders-multi-billionaires-ipo",
+  "publishedAt": "2026-11-18T17:13:00Z",
+  "lede": "The seven people who founded Anthropic are hours away from becoming multi-billionaires, as the company behind the Claude chatbot lists its shares in one of the largest stock market debuts in history.",
+  "body": [
+   "Anthropic is selling its shares at between $70 and $78 each, with the price set on Wednesday and trading due to begin on Thursday on the Nasdaq stock exchange under the symbol ANT. At the top of the price range, each founder's stake would be worth at least $18.5 billion. At the $74 midpoint, the stakes would be worth about $17.8 billion to $18.1 billion each, and the listing would value the company at up to about $1.4 trillion.",
+   "The seven founders left OpenAI in 2021 after falling out over the direction of artificial intelligence safety, and built Anthropic around its Claude chatbot. They are chief executive Dario Amodei, 43, president Daniela Amodei, chief compute officer Tom Brown, 39, policy chief Jack Clark, chief scientist Jared Kaplan, 42, interpretability researcher Chris Olah, 34, and chief architect Sam McCandlish, 36. Each holds roughly 240 million to 244 million shares, about a tenth of the company between them, with Brown holding the largest disclosed stake.",
+   "The founders plan to sell about 3.4 million shares each in the offering, worth roughly $250 million apiece, while keeping nearly all of their holdings. They have pledged to give 80 percent of their personal stakes to charity, though the pledge can be revoked and is not legally binding. A special class of share will also let them keep control of key shareholder votes even after the company lists.",
+   "Demand for the offering has been strong, with orders reported at about six times the shares on offer, and strategic partners including Google and Nvidia have agreed to buy $26 billion of non-voting stock. Amazon's stake of about 1.92 billion shares would be worth about $142 billion at the midpoint price. Anthropic's annualised revenue run rate stood at about $81 billion at the end of October, according to its filings."
+  ],
+  "keyPoints": [
+   "Anthropic is pricing its shares at $70 to $78 each, with trading due to begin on Thursday on the Nasdaq under the symbol ANT.",
+   "At the top of the range, each of the seven founders' stakes would be worth at least $18.5 billion; at the midpoint, about $17.8 billion to $18.1 billion each.",
+   "The founders left OpenAI in 2021 and each hold roughly 240 million to 244 million shares, about a tenth of the company between them.",
+   "They have pledged 80 percent of their personal stakes to charity, though the pledge can be revoked, and will keep control of key shareholder votes after listing."
+  ],
+  "img": "images/thumb-anthropic-founders-multi-billionaires-ipo.jpg",
+  "credit": "Photo: TechCrunch, CC BY 2.0, via Wikimedia Commons",
+  "title": "Anthropic's Seven Founders Set to Become Multi-Billionaires as AI Giant Goes Public",
+  "sec": "business"
+ },
  {
   "slug": "cal-maine-culls-1-8m-birds-bird-flu-florida",
   "publishedAt": "2026-11-18T16:49:00Z",
@@ -787,12 +813,15 @@ var ORIGINALS = [
   "lede": "Iran's army says it brought down an American MQ-9 Reaper drone near the Strait of Hormuz on Wednesday, in the latest escalation of the nine-month conflict between the United States and Iran.",
   "body": [
    "In a statement carried by state media, the army said the aircraft was detected flying east of the strait and destroyed by air-defence systems built in Iran. The army said the interception was carried out by units in the country's southeast, and it released a short video it said showed the drone being hit. The United States military has not commented on the claim.",
-   "The announcement came a day after the Revolutionary Guards said they had brought down a smaller American MQ-1 drone south of Qeshm Island, and put the number of MQ-1 drones they say they have downed at 18. It also followed American strikes on a missile site on Qeshm Island on Tuesday, and Iranian drone attacks on American bases in Bahrain and Kuwait earlier on Wednesday."
+   "The announcement came a day after the Revolutionary Guards said they had brought down a smaller American MQ-1 drone south of Qeshm Island, and put the number of MQ-1 drones they say they have downed at 18. It also followed American strikes on a missile site on Qeshm Island on Tuesday, and Iranian drone attacks on American bases in Bahrain and Kuwait earlier on Wednesday.",
+   "Iran also said its drones had targeted American Patriot air-defence systems and missile launch platforms at Ali al-Salem Air Base in Kuwait early on Wednesday. Kuwait said its air defences were responding to hostile drone attacks, and its foreign ministry condemned what it called repeated criminal Iranian attacks on the country. Saudi Arabia, Qatar and the United Arab Emirates also condemned the attacks on Kuwait and Bahrain, and the Gulf Cooperation Council's secretary-general condemned the latest drone attack on Kuwait.",
+   "The army chief, Major-General Amir Hatami, warned that any renewed attack on Iran would draw a more forceful response, as the United States moved a third aircraft carrier group into the region. The US military has not commented on the drone claim, and the claim itself has not been independently verified."
   ],
   "keyPoints": [
    "Iran's army says it brought down an American MQ-9 Reaper drone near the Strait of Hormuz on Wednesday.",
    "The US military has not commented on the claim; Iran released a short video it said showed the interception.",
-   "The claim follows US strikes on a missile site on Qeshm Island and Iranian drone attacks on US bases in Bahrain and Kuwait."
+   "The claim follows US strikes on a missile site on Qeshm Island and Iranian drone attacks on US bases in Bahrain and Kuwait.",
+   "Iran also said its drones targeted US Patriot systems at Ali al-Salem Air Base in Kuwait; Kuwait, Saudi Arabia, Qatar and the UAE condemned the attacks."
   ],
   "img": "images/thumb-iran-mq9-drone-shot-down-hormuz.jpg",
   "credit": "",
@@ -5637,6 +5666,9 @@ function cleanBodyText(raw){
      "com" remnant of a stripped domain in front of it): cut the whole
      tail so no outlet name or aggregator boilerplate can reach the page. */
   s = s.replace(/\s*(?:com\s+)?See more headlines and perspectives on Google News.*$/i, "");
+  /* Watchdog fix 2026-11-18: a bare domain fragment ("com") left over from
+     stripped aggregator boilerplate must never surface as the whole body. */
+  if (/^(com|www|pk|org|net)$/i.test(s.trim())) return "";
   /* Watchdog fix 2026-11-17: Dawn wire copy opens with an underscore-prefixed
      outlet dateline ("_Dawn TOBA TEK SINGH: ..."). The leading "_" defeats the
      \b in PUBLISHER_NAME_RE, so the outlet name survived the sentence scrub
@@ -5746,6 +5778,11 @@ function classify(title, desc, fallback){
      not outrank the court. Only fires when the title names a court AND
      a case word, so genuine health stories (no court named) are untouched. */
   if (/\b(IHC|LHC|SHC|PHC|high court|supreme court)\b/i.test(title || "") && /\b(case|verdict|plea|petition|bail|sentenced|conviction|trial)\b/i.test(title || "")) return "politics";
+  /* Watchdog fix 2026-11-18: legal-institution stories (bar council,
+     judiciary, chief justice) are politics, not health — "medical" in the
+     title must not outrank them. Narrow on purpose: a "health minister
+     announces..." story must stay health. */
+  if (/(bar council|judiciary|chief justice)/i.test(title || "")) return "politics";
   for (var i = 0; i < KEYWORDS.length; i++){
     if (KEYWORDS[i][1].test(title)) return KEYWORDS[i][0];
   }
@@ -6178,6 +6215,11 @@ function restoreMeta(){
   setMetaContent('meta[name="twitter:image"]', META_DEFAULTS.twImage);
 }
 function renderArticle(id, keepScroll){
+  /* Watchdog fix 2026-11-18: resolve a reworded story's old id through the
+     near-dup alias map (populated by rebuildFromFeeds) so a shared link
+     opens the surviving copy instead of the homepage. */
+  var guard = 0;
+  while (!storyCache[id] && storyAliases[id] && guard++ < 5) id = storyAliases[id];
   var s = storyCache[id];
   if (!s) return false;
   var y = window.scrollY || 0;
@@ -6479,11 +6521,16 @@ function rebuildFromFeeds(){
   var origTokens = ORIGINALS.map(function(o){ return titleTokens(o.title); });
   merged.forEach(function(s){
     var key = s.title.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
-    if (seen[key]) return;
+    /* Watchdog fix 2026-11-18: a headline reworded by its publisher mints a
+       new id, so a shared #/story/<old-id> link dies. When a story is
+       dropped as a near-duplicate, remember which kept story it is — a
+       later #/story/<dropped-id> then opens the surviving copy instead
+       of falling back to the homepage. */
+    if (seen[key]){ storyAliases[s.id] = storyAliases[seen[key]] || seen[key]; return; }
     var tt = titleTokens(s.title);
-    for (k = 0; k < keptTokens.length; k++) if (tokensNearDup(tt, keptTokens[k])) return;
-    for (k = 0; k < origTokens.length; k++) if (tokensNearDup(tt, origTokens[k])) return;
-    seen[key] = 1; keptTokens.push(tt); uniq.push(s);
+    for (k = 0; k < keptTokens.length; k++) if (tokensNearDup(tt, keptTokens[k])){ storyAliases[s.id] = storyAliases[uniq[k].id] || uniq[k].id; return; }
+    for (k = 0; k < origTokens.length; k++) if (tokensNearDup(tt, origTokens[k])){ storyAliases[s.id] = ORIGINALS[k].id; return; }
+    seen[key] = s.id; keptTokens.push(tt); uniq.push(s);
   });
   uniq = uniq.filter(isFreshStory);
   uniq.sort(function(a, b){ return b.time - a.time; });
@@ -6529,7 +6576,14 @@ function rebuildFromFeeds(){
   }
   lastFingerprint = fp;
   allStories = uniq.slice(0, 220);
-  uniq.forEach(function(s){ storyCache[s.id] = s; });
+  uniq.forEach(function(s){
+    /* Watchdog fix 2026-11-18: same headline re-served by different feeds
+       with different pubDates — keep the earliest time seen for an id so a
+       re-date never moves the clock. */
+    var prev = storyCache[s.id];
+    if (prev && prev.time && s.time && prev.time.getTime() < s.time.getTime()) s.time = prev.time;
+    storyCache[s.id] = s;
+  });
   lastOk = Date.now();
   render();
   refreshOpenArticle();
@@ -6569,7 +6623,11 @@ var searchResults = document.getElementById("searchResults");
 var snapshotStories = hydrateStories(INITIAL_STORIES);
 function searchPool(){
   var seen = {}, pool = [];
-  ORIGINALS.concat(snapshotStories).concat(allStories).forEach(function(s){
+  /* Watchdog fix 2026-11-18: a headline that rotated out of the live feeds
+     stays findable for the rest of the session — storyCache retains every
+     story seen (48h-filtered on entry), so include it in the pool. */
+  var cached = Object.keys(storyCache).map(function(k){ return storyCache[k]; });
+  ORIGINALS.concat(snapshotStories).concat(allStories).concat(cached).forEach(function(s){
     if (!s || !s.id || seen[s.id]) return;
     seen[s.id] = 1;
     pool.push(s);
