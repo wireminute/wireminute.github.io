@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Nov 2026 21:50:02 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 22:09:00 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>US Lawmakers Push to Raise Minimum Wage to $25 and End Tipped Pay</title>
+      <link>https://wireminute.com/s/us-minimum-wage-25-living-wage-lawmakers.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/us-minimum-wage-25-living-wage-lawmakers.html</guid>
+      <description>A group of 17 lawmakers in Washington has stepped up its campaign to lift the federal minimum wage to $25 an hour and scrap the lower rate paid to tipped workers, pressing for a vote on a bill that has waited months for action.</description>
+      <pubDate>Wed, 18 Nov 2026 22:09:00 GMT</pubDate>
+      <category>Politics</category>
+      <enclosure url="https://wireminute.com/images/thumb-us-minimum-wage-25-living-wage-lawmakers.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>US and Venezuela Sign Military Cooperation Deal as Hegseth Makes Surprise Caracas Visit</title>
       <link>https://wireminute.com/s/us-venezuela-military-deal-hegseth-caracas.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Wed, 18 Nov 2026 07:34:00 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-africa-journalists-poverty-threats-survey.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Category 5 Cyclone Xavier Batters Northern Cook Islands With 315 km/h Gusts</title>
-      <link>https://wireminute.com/s/cyclone-xavier-category-5-northern-cook-islands.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/cyclone-xavier-category-5-northern-cook-islands.html</guid>
-      <description>Severe Tropical Cyclone Xavier has strengthened into a Category 5 storm over the Northern Cook Islands, packing sustained winds of 220 kilometres per hour and gusts up to 315, as emergency officials urge islanders to stay on high alert.</description>
-      <pubDate>Wed, 18 Nov 2026 07:12:00 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-cyclone-xavier-category-5-northern-cook-islands.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
