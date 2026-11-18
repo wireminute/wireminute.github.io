@@ -6,7 +6,7 @@
 <title>WireMinute | Breaking News &amp; Live World Updates</title>
 <meta name="description" content="WireMinute brings you breaking news and live updates every minute: world news, politics, business, technology, sports and health, in short, clear summaries.">
 <meta name="keywords" content="breaking news, live news updates, world news, politics news, business news, technology news, sports news, health news, latest headlines, WireMinute">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="google-site-verification" content="rtBpmmtFo1jT-kHLxQuaDun0ejRi6QV23UENHqbszPI" />
 <meta name="theme-color" content="#bb1919">
 <link rel="canonical" href="https://wireminute.com/">
@@ -95,7 +95,7 @@ header{border-bottom:3px solid var(--red);background:var(--headerbg);position:st
 .hright{margin-left:auto;text-align:right;font-family:Arial,Helvetica,sans-serif}
 .live-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--red);margin-right:5px;animation:pulse 1.6s infinite;vertical-align:middle}
 @keyframes pulse{0%{opacity:1}50%{opacity:.25}100%{opacity:1}}
-.updated{font-size:12px;color:var(--grey);white-space:nowrap}
+.updated{font-size:12px;color:var(--grey);white-space:nowrap;min-height:18px}
 #refreshBtn{margin-top:5px;min-height:44px;min-width:44px;padding:8px 16px;border:1px solid var(--red);background:var(--red);color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;border-radius:2px;cursor:pointer}
 #refreshBtn:active{background:var(--darkred);border-color:var(--darkred)}
 .hactions{display:flex;gap:8px;align-items:center}
@@ -108,7 +108,7 @@ header{border-bottom:3px solid var(--red);background:var(--headerbg);position:st
 .dateline{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding:6px 0 8px;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:var(--grey)}
 .dateline-note{letter-spacing:.2px}
 /* Breaking ticker */
-.ticker{background:var(--red);color:#fff;overflow:hidden;display:flex;align-items:stretch;font-family:Arial,Helvetica,sans-serif}
+.ticker{background:var(--red);color:#fff;overflow:hidden;display:flex;align-items:stretch;font-family:Arial,Helvetica,sans-serif;min-height:32px}
 .ticker .tlabel{background:var(--darkred);font-weight:900;font-size:13px;padding:8px 14px;display:flex;align-items:center;letter-spacing:1.5px;flex:0 0 auto;z-index:2}
 .ticker .tviewport{overflow:hidden;flex:1;display:flex;align-items:center}
 .ticker .ttrack{display:inline-flex;white-space:nowrap;animation:scroll 70s linear infinite;will-change:transform}
@@ -275,7 +275,7 @@ footer .topstories a:hover span{text-decoration:underline}
   .logo{font-size:23px;letter-spacing:-.5px}
   .logo .h1sub{display:none}
   .hright{flex:0 1 auto}
-  .updated{font-size:11px;white-space:normal;line-height:1.35}
+  .updated{font-size:11px;white-space:normal;line-height:1.35;min-height:30px}
   #refreshBtn{font-size:0;padding:9px 11px}
   #refreshBtn svg{width:18px;height:18px;vertical-align:middle}
   .app-btn{font-size:0;padding:9px 11px;gap:0}
@@ -6063,7 +6063,7 @@ function render(){
   var rest = pool.filter(function(_, idx){ return idx !== li; }).slice(0, 24);
   leadBox.innerHTML =
     '<article class="lead"><a href="#/story/' + lead.id + '">' +
-    '<img decoding="async" src="' + esc(lead.img || PLACEHOLDER) + '" alt="' + esc(lead.title) + '" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER + '\'">' +
+    '<img loading="eager" fetchpriority="high" decoding="async" src="' + esc(lead.img || PLACEHOLDER) + '" alt="' + esc(lead.title) + '" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER + '\'">' +
     '<div class="kick"><span class="cat-chip">' + secName(lead.sec) + '</span>' + (lead.original ? '<span class="own-chip">WireMinute Original</span>' : '') + '</div>' +
     '<h2>' + esc(lead.title) + '</h2></a>' +
     (lead.summary ? '<p>' + esc(lead.summary) + '</p>' : '') +
@@ -6332,7 +6332,7 @@ function renderArticle(id, keepScroll){
     '<button type="button" class="tbtn" id="fontSizeBtn" aria-label="Change text size"><span style="font-size:18px;font-weight:900;line-height:1">A</span><span style="font-size:12px;font-weight:900;line-height:1">A</span><span class="fslabel" id="fsLabel"></span></button>' +
     '<span class="time" id="shareMsgTop"></span>' +
     '</div>' +
-    '<img class="art-hero" decoding="async" src="' + esc(s.img || PLACEHOLDER) + '" alt="' + esc(s.title) + '" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER + '\'">' +
+    '<img class="art-hero" loading="eager" decoding="async" src="' + esc(s.img || PLACEHOLDER) + '" alt="' + esc(s.title) + '" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER + '\'">' +
     (s.original && s.body ? '<p class="lede">' + esc(s.lede) + '</p>' + s.body.map(function(p){ return '<p class="full">' + esc(p) + '</p>'; }).join("") : (s.full ? '<p class="full">' + esc(s.full) + '</p>' : (s.summary ? '<p class="full">' + esc(s.summary) + '</p>' : ''))) +
     kpHtml +
     '<div class="art-actions"><button type="button" id="shareBtn">Share this story</button><span class="time" id="shareMsg"></span></div>' +
