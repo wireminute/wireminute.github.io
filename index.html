@@ -409,6 +409,7 @@ footer .topstories a:hover span{text-decoration:underline}
       <!--SECTIONSNAV:END-->
       <!--TOPSTORIES:START-->
       <ul>
+        <li><a href="https://wireminute.com/s/java4shell-flaw-cve-2026-114938.html"><img src="images/thumb-java4shell-flaw-cve-2026-114938.jpg" alt="" loading="lazy" decoding="async" width="96" height="54"><span>Critical Java Flaw Lets Attackers Run Code on Servers Without Logging In</span></a></li>
         <li><a href="https://wireminute.com/s/thomas-markle-philippines-charges.html"><img src="images/thumb-thomas-markle-philippines-charges.jpg" alt="" loading="lazy" decoding="async" width="96" height="54"><span>Philippines Files Three Child Abuse Material Charges Against Meghan's Father Thomas Markle</span></a></li>
         <li><a href="https://wireminute.com/s/trump-arrives-shenzhen-xi-greets-apec-summit.html"><img src="images/thumb-trump-arrives-shenzhen-xi-greets-apec.jpg" alt="" loading="lazy" decoding="async" width="96" height="54"><span>Trump and Putin Shake Hands as All Three Leaders Appear Together in Shenzhen</span></a></li>
         <li><a href="https://wireminute.com/s/rohingya-icj-genocide-verdict-myanmar-thursday.html"><img src="images/thumb-rohingya-icj-genocide-verdict.jpg" alt="" loading="lazy" decoding="async" width="96" height="54"><span>World Court to Rule on Rohingya Genocide Case as Refugees Await Justice</span></a></li>
@@ -730,6 +731,27 @@ var PUBLISHER_NAME_RE = new RegExp("\\b(?:" + PUBLISHER_ALT + ")\\b", "i");
 /* WireMinute original reporting: our own articles, written in-house.
    They lead the site; the live feed below them is only a headline stream. */
 var ORIGINALS = [
+ {
+  "slug": "java4shell-flaw-cve-2026-114938",
+  "publishedAt": "2026-11-18T12:51:00Z",
+  "lede": "A serious flaw in Java, the programming language that powers millions of servers, can let attackers run their own code on widely used business software without logging in, security researchers have found. Fixed builds are out, and the US cyber agency is urging organisations to patch immediately.",
+  "body": [
+   "Researchers at security firm Calif found the flaw, tracked as CVE-2026-114938 and nicknamed Java4Shell, in the part of Java that decodes Base64, a common format for sending data such as login details and file uploads. The bug sits in hand-written assembly code that speeds up decoding on modern Intel and AMD processors, where a crafted input makes the decoder write past the end of its output buffer and corrupt memory. That corruption can be turned into remote code execution, letting an attacker run commands on the machine as the Java process.",
+   "The flaw affects OpenJDK from version 17.0.6 onward, covering the Java 17, 21, 25 and 27 lines, as well as a performance build of Oracle's Java 8. It only bites on x86-64 processors that support a feature called AVX-512 VBMI, which includes Intel Xeon chips from Ice Lake onward and AMD EPYC and Ryzen chips from Zen 4 onward. Servers running on ARM chips are not affected. Oracle, which assigned the flaw a severity score of 8.1 out of 10, describes it as difficult to exploit, while Calif rates it 9.2 out of 10 under a newer scoring system.",
+   "In their own testing, the researchers took control of default installations of six widely used programs without logging in: the identity systems Keycloak and PingFederate, the workplace tools Jira and Confluence, the code repository Artifactory and the automation server Jenkins. With a login, they also reached Apache Kafka, Solr, Elasticsearch, Gerrit and the deployment tool Spinnaker. Calif says it is holding back the attack code for individual programs until users have had time to update.",
+   "Oracle released fixed builds on Monday as part of its November security update, and Amazon has shipped fixed builds of its Corretto distribution, with other vendors still publishing theirs. The US Cybersecurity and Infrastructure Security Agency issued an alert the same day urging organisations to patch immediately. No attacks using the flaw have been reported in the wild, and it has not yet been added to the agency's list of known exploited vulnerabilities. The flaw was disclosed publicly on Monday after details leaked ahead of the planned coordinated release."
+  ],
+  "keyPoints": [
+   "Java4Shell (CVE-2026-114938) is a memory corruption flaw in Java's Base64 decoder, rated 8.1 out of 10 by Oracle and 9.2 by the researchers who found it.",
+   "It affects OpenJDK from version 17.0.6 onward on x86-64 chips with AVX-512 VBMI support; servers on ARM chips are not affected.",
+   "Researchers demonstrated remote code execution without a login on default installations of Jira, Confluence, Jenkins, Keycloak, Artifactory and PingFederate.",
+   "Oracle and Amazon have released fixed builds and the US cyber agency has urged immediate patching; no attacks in the wild have been reported so far."
+  ],
+  "img": "images/thumb-java4shell-flaw-cve-2026-114938.jpg",
+  "credit": "Photo: BalticServers.com, CC BY-SA 3.0, via Wikimedia Commons",
+  "title": "Critical Java Flaw Lets Attackers Run Code on Servers Without Logging In",
+  "sec": "technology"
+ },
  {
   "slug": "thomas-markle-philippines-charges",
   "publishedAt": "2026-11-18T11:18:34Z",
