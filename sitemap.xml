@@ -1266,4 +1266,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://wireminute.com/s/cyclone-xavier-category-5-northern-cook-islands.html</loc>
+    <lastmod>2026-11-18T07:12:00Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
