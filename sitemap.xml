@@ -1716,4 +1716,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://wireminute.com/s/burnham-europe-ready-enter-ukraine-negotiations.html</loc>
+    <lastmod>2026-11-19T20:30:26Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
