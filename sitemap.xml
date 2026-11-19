@@ -61,6 +61,12 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://wireminute.com/s/fifa-confirms-infantino-challengers-diallo-tashima-2027-election.html</loc>
+    <lastmod>2026-11-19T11:58:20Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://wireminute.com/s/icj-rohingya-genocide-verdict-myanmar-forces-killed-thousands.html</loc>
     <lastmod>2026-11-19T10:11:00Z</lastmod>
     <changefreq>daily</changefreq>
@@ -261,7 +267,7 @@
   <url>
     <loc>https://wireminute.com/s/israel-gaza-operation-central-gaza.html</loc>
     <lastmod>2026-11-18T14:53:40Z</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
