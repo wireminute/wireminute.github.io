@@ -7802,17 +7802,39 @@ function restoreMeta(){
   setMetaContent('meta[name="twitter:description"]', META_DEFAULTS.twDesc);
   setMetaContent('meta[name="twitter:image"]', META_DEFAULTS.twImage);
 }
-function renderArticle(id, keepScroll){
-  /* Watchdog fix 2026-11-18: resolve a reworded story's old id through the
-     near-dup alias map (populated by rebuildFromFeeds) so a shared link
-     opens the surviving copy instead of the homepage.
-     Watchdog fix 2026-11-20: the old !storyCache[id] guard defeated this
-     for every story baked in the snapshot or fetched live, because those
-     sit in storyCache - a near-dup of an Original (e.g. the wire twin of
-     the Fiona original) then opened as a thin placeholder article instead
-     of the surviving full copy. Follow the alias whenever one exists. */
+/* Watchdog fix 2026-11-20: resolve a requested article id to the story
+   that should actually open. Two steps: (a) follow the near-dup alias
+   map (populated by rebuildFromFeeds); (b) if the cached copy is a thin
+   wire twin of one of our Originals, open the Original instead. Step (b)
+   must live here, not only in rebuildFromFeeds: a twin whose feed item
+   has rotated out of the live feeds (BBC reworded the Fiona twin twice
+   in one morning - the qcsjkb headline is no longer in the BBC feed at
+   all) never appears in `merged`, so no alias is ever set for it, yet
+   the cached copy still sits in storyCache and a shared #/story/<twin>
+   link would open the thin placeholder instead of the full Original.
+   The same tokensNearDup test already hides such twins from the visible
+   stream, so an article open must not resurrect one. */
+var origTokensCache = null;
+function resolveArticleId(id){
   var guard = 0;
   while (storyAliases[id] && storyAliases[id] !== id && guard++ < 5) id = storyAliases[id];
+  var s = storyCache[id];
+  if (s && !s.original){
+    if (!origTokensCache) origTokensCache = ORIGINALS.map(function(o){ return titleTokens(o.title); });
+    var tt = titleTokens(s.title);
+    for (var k = 0; k < ORIGINALS.length; k++){
+      if (tokensNearDup(tt, origTokensCache[k])){ id = ORIGINALS[k].id; break; }
+    }
+  }
+  return id;
+}
+function renderArticle(id, keepScroll){
+  /* Article opens resolve through resolveArticleId() above: a near-dup
+     alias, or a wire twin of one of our Originals, opens the surviving
+     full copy - never a thin placeholder. (Watchdog fixes 2026-11-18
+     and 2026-11-20; the old !storyCache[id] guard that defeated the
+     alias for snapshot/live stories was removed 2026-11-20.) */
+  id = resolveArticleId(id);
   var s = storyCache[id];
   if (!s) return false;
   var y = window.scrollY || 0;
@@ -8004,6 +8026,11 @@ function route(){
 }
 function refreshOpenArticle(){
   if (!openArticleId) return;
+  /* Watchdog fix 2026-11-20: an already-open article whose id now
+     resolves elsewhere (a twin aliased by a just-landed feed, or a
+     cached twin of an Original) must flip to the surviving copy at
+     once, not wait for a content change or the next minute tick. */
+  if (resolveArticleId(openArticleId) !== openArticleId){ renderArticle(openArticleId, true); return; }
   var s = storyCache[openArticleId];
   if (!s) return; /* story left the feed: keep showing the cached copy untouched */
   var key = s.title + "|" + (s.full || "") + "|" + (s.summary || "") + "|" + (s.img || "") + "|" + (s.credit || "");
