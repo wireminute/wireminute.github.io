@@ -1,0 +1,25 @@
+# WireMinute
+
+> WireMinute is an online news agency publishing breaking news and live world updates every minute, in its own words. Coverage is international first: world, politics, business, technology, sports and health. Every story opens on wireminute.com with a real photo of its subject.
+
+## News sections
+
+- [Latest news](https://wireminute.com/): The newest stories across all sections, updated every minute
+- [World](https://wireminute.com/world.html): International news, conflicts, diplomacy and major global events
+- [Politics](https://wireminute.com/politics.html): Governments, elections, courts and policy
+- [Business](https://wireminute.com/business.html): Markets, companies, trade and the global economy
+- [Technology](https://wireminute.com/technology.html): Tech companies, AI, gadgets and science
+- [Sports](https://wireminute.com/sports.html): Football, cricket, tennis, Formula 1 and more
+- [Health](https://wireminute.com/health.html): Medicine, public health and research
+
+## About WireMinute
+
+- [About us](https://wireminute.com/about.html): What WireMinute is and how it works
+- [Contact](https://wireminute.com/contact.html): How to reach the newsroom
+- [Privacy policy](https://wireminute.com/privacy.html): How reader data is handled
+
+## Feeds and discovery
+
+- [RSS feed](https://wireminute.com/feed.xml): The latest original stories as an RSS feed
+- [Sitemap](https://wireminute.com/sitemap.xml): Every page and story on the site
+- [Facebook Page](https://www.facebook.com/profile.php?id=61596949581283): WireMinute stories posted through the day
