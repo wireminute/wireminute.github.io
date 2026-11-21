@@ -61,6 +61,12 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://wireminute.com/s/bitcoin-falls-below-56000-two-year-low.html</loc>
+    <lastmod>2026-11-21T08:37:54Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://wireminute.com/s/phumzile-mlambo-ngcuka-dies-71.html</loc>
     <lastmod>2026-11-21T08:11:20Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -447,7 +453,7 @@
   <url>
     <loc>https://wireminute.com/s/france-awaits-zecler-trial-verdict.html</loc>
     <lastmod>2026-11-19T19:28:37Z</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
