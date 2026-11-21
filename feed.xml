@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 21 Nov 2026 06:08:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 06:22:00 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bayer&apos;s $7.25 Billion Roundup Deal Wins Final Court Approval After a Decade of Cancer Claims</title>
+      <link>https://wireminute.com/s/bayer-roundup-725bn-settlement-approved.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/bayer-roundup-725bn-settlement-approved.html</guid>
+      <description>A Missouri judge has given final approval to Bayer&apos;s $7.25 billion settlement of lawsuits claiming its weedkiller Roundup causes cancer, a ruling that could finally close a decade of litigation that has weighed on the German company.</description>
+      <pubDate>Sat, 21 Nov 2026 06:22:00 GMT</pubDate>
+      <category>Business</category>
+      <enclosure url="https://wireminute.com/images/thumb-bayer-roundup-725bn-settlement-approved.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Man Convicted of Starting Deadly Palisades Fire That Killed 12</title>
       <link>https://wireminute.com/s/palisades-fire-arson-conviction.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Fri, 20 Nov 2026 17:36:00 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-europe-youth-day-action-cost-living-protests.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Tanker Hit in Strait of Hormuz as Doubt Grows Over Iran&apos;s Blockade-Busting Convoy</title>
-      <link>https://wireminute.com/s/iran-tanker-convoy-kharg.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/iran-tanker-convoy-kharg.html</guid>
-      <description>A tanker has caught fire after being hit in the Strait of Hormuz, as doubt grows over Iran&apos;s reported plan to send a loaded convoy past the United States naval blockade of its oil exports.</description>
-      <pubDate>Fri, 20 Nov 2026 16:56:00 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-iran-tanker-convoy-kharg.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
