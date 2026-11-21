@@ -8283,6 +8283,8 @@ function parseFeed(xmlText, feed){
     if (feed.strip) title = title.replace(/\s+-\s+(?:www\.)?[\w-]+\.[a-z]{2,}(?:\.[\w-]+)*$/i, "").trim(); /* watchdog fix 2026-11-14: hyphenated publisher domains (www.daily-sun.com) survive the [^-] strip above */
     title = cleanTitleText(title) || decodeEntities(title).replace(/\s+/g, " ").trim();
     if (isSpamTitle(title)) continue; /* watchdog fix 2026-11-14: aggregator-bait title, never surfaces */
+    var _lk = itemText(it, "link") || "";
+    if (/\/iplayer\/episode\//i.test(_lk)) continue; /* watchdog fix 2026-11-21: BBC programme listings ("Tech Now" — title is the programme name, one-sentence presenter blurb, branded graphic hero) ride the Technology RSS with an iPlayer episode link, not a news-article link; one reached the ticker and the Technology hero live 2026-11-21 07:08 PKT. The link is read ONLY as a filter signal — never displayed, never followed — stories still open inside WireMinute. Mirrors tools/regen_snapshot.mjs. */
     /* The feed item's own article URL is deliberately never read or used:
        every story opens inside WireMinute, never out to another site. */
     var dateStr = itemText(it, "pubDate") || itemText(it, "published") || itemText(it, "updated") || itemText(it, "dc:date");
