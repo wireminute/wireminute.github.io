@@ -949,6 +949,12 @@ var STRICT_SECTION = [
   ["technology", /\b(artificial intelligence|AI chips?|AI data centres?|AI data centers?|data centres?|data centers?|semiconductor|microchip|Nvidia|Anthropic|OpenAI|ChatGPT|quantum computing|spacecraft|satellite|\bNASA\b|Voyager|space mission)\b/i]
 ];
 function refileSec(title){
+  /* Watchdog fix 2026-11-22: same crime guard as classify() — a murder
+     story arriving via a fixed-section feed (technology search, business
+     search...) must re-file to world instead of keeping the feed's
+     section. World is the only section this function may return outside
+     STRICT_SECTION, and only for crime titles. */
+  if (/\b(murder|homicide|manslaughter|assassinat\w*|stabbing|stabbed|shot dead|kidnapped|kidnapping|abducted|abduction|rape|raped|beheaded|lynched|killing)\b/i.test(title || "")) return "world";
   for (var i = 0; i < STRICT_SECTION.length; i++){
     if (STRICT_SECTION[i][1].test(title || "")) return STRICT_SECTION[i][0];
   }
@@ -9090,7 +9096,25 @@ function classify(title, desc, fallback){
   for (var i = 0; i < KEYWORDS.length; i++){
     if (KEYWORDS[i][1].test(title)) return KEYWORDS[i][0];
   }
+  /* Watchdog fix 2026-11-22: a crime story is world news, never the beat
+     of a word in its lede — "Forensic evidence points to servant in Hina
+     Javaid murder as probe clears husband" filed as TECHNOLOGY because its
+     lede called the victim a "digital media executive" ("digital" hit the
+     technology row) while the title names a murder. The guard sits AFTER
+     the title keyword loop on purpose: a title that names its own beat
+     ("Court orders murder trial", "Minister resigns after murder probe")
+     keeps that beat, and only a title with no beat keyword falls through
+     to the crime guard. Kept narrow: "killed" stays out (war and disaster
+     copy), "shot" stays out (sport/photography), so only crime-unambiguous
+     words fire. The same literal is mirrored in refileSec() below (the
+     regen tool extracts both functions verbatim, so the two must stay in
+     sync). */
+  if (/\b(murder|homicide|manslaughter|assassinat\w*|stabbing|stabbed|shot dead|kidnapped|kidnapping|abducted|abduction|rape|raped|beheaded|lynched|killing)\b/i.test(title || "")) return "world";
   var lede = (desc || "").split(/[.!?]\s+/)[0] || "";
+  /* Watchdog fix 2026-11-22: same crime guard on the lede — a crime story
+     whose title carries no crime word (e.g. "charge sheet submitted")
+     must not be re-filed by a tech word in its first sentence either. */
+  if (/\b(murder|homicide|manslaughter|assassinat\w*|stabbing|stabbed|shot dead|kidnapped|kidnapping|abducted|abduction|rape|raped|beheaded|lynched|killing)\b/i.test(lede)) return "world";
   for (var i = 0; i < KEYWORDS.length; i++){
     if (KEYWORDS[i][1].test(lede)) return KEYWORDS[i][0];
   }
