@@ -61,6 +61,18 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://wireminute.com/s/libya-suspected-drone-attack-russian-ship-benghazi-port.html</loc>
+    <lastmod>2026-11-22T16:13:00Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wireminute.com/s/west-bank-settler-arson-attacks-five-villages.html</loc>
+    <lastmod>2026-11-22T16:04:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://wireminute.com/s/centrica-boss-warns-non-payment-energy-bills-january-rise.html</loc>
     <lastmod>2026-11-22T14:07:00Z</lastmod>
     <changefreq>monthly</changefreq>
