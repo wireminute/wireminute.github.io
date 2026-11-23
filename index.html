@@ -953,7 +953,13 @@ var KEYWORDS = [
   ["sports", /\b(cricket|football|hockey|tennis|sport|match|tournament|world cup|asia cup|league|player|wicket|goal|olympic|athlete|racing|test match|test series|first test|second test|third test|fourth test|fifth test|bowler|batsman|wicketkeeper|goalkeeper|championship|semi-final|cricketer|footballer)\b/i],
   ["technology", /\b(technology|tech|smartphone|mobile phone|internet|software|app|artificial intelligence|\bAI\b|gadget|cyber|digital|5G|robot)\b/i],
   ["health", /\b(health|hospital|doctor|disease|virus|vaccine|medical|patients?|cancer|diabetes|dengue|polio|clinic|surgery)\b/i],
-  ["politics", /\b(politic|government|parliament|senate|election|minister|prime minister|president|assembly|court|supreme court|army chief|protest|democracy|vote|policy|diplomat|talks|ceasefire|sanctions?)\b/i]
+  ["politics", /\b(politic|government|parliament|senate|election|minister|prime minister|president|assembly|court|supreme court|army chief|protest|democracy|vote|policy|provinces?|devolution|diplomat|talks|ceasefire|sanctions?)\b/i]
+  /* Watchdog fix 2026-11-23: "Shujaat, Naqvi discuss creation of new
+     provinces, devolution of power in Lahore meeting" filed as SPORTS —
+     its title carries no politics keyword, and with an empty description
+     classify() fell through to the feed-section fallback (sports feed).
+     "provinces" and "devolution" are politics words and neither names a
+     sport, so this stays narrow. */
 ];
 /* Strict re-file (watchdog fix, 2026-11-15): a fixed-section feed (BBC
    World, Al Jazeera...) sometimes carries a story from another beat —
