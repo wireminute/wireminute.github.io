@@ -131,14 +131,14 @@ nav.sections{background:var(--navbg);position:sticky;top:0;z-index:40}
 .kick{display:flex;gap:10px;align-items:center;margin:10px 0 5px}
 /* Lead */
 .lead{border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:20px}
-.lead img{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--imgbg)}
+.lead img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center 20%;background:var(--imgbg)}
 .lead h2{font-size:clamp(27px,4.6vw,42px);line-height:1.12;letter-spacing:-.3px;margin:2px 0 9px}
 .lead p{font-size:18px;line-height:1.55;color:var(--body2);max-width:68ch;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
 .lead .meta{display:flex;gap:10px;align-items:center;margin-top:10px;padding-top:9px;border-top:1px solid var(--line);flex-wrap:wrap}
 /* Cards */
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px 20px}
 .card{border-bottom:1px solid var(--line);padding-bottom:15px}
-.card img{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--imgbg)}
+.card img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center 20%;background:var(--imgbg)}
 .card h3{font-size:20px;line-height:1.24;margin:2px 0 6px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .card p{font-size:16px;line-height:1.5;color:var(--body2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .card .meta{display:flex;gap:10px;align-items:center;margin-top:7px;flex-wrap:wrap}
@@ -213,7 +213,7 @@ footer .topstories a:hover span{text-decoration:underline}
 #articleView .art,#pageView .page{max-width:780px;margin:0 auto}
 #backBtn,#pageBackBtn{min-height:44px;padding:10px 16px;border:1px solid var(--red);background:transparent;color:var(--red);font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;border-radius:2px;cursor:pointer;margin-bottom:16px}
 #backBtn:active,#pageBackBtn:active{background:var(--red);color:#fff}
-.art-hero{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--imgbg);margin:4px 0 16px}
+.art-hero{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center 20%;background:var(--imgbg);margin:4px 0 16px}
 .art .art-title{font-size:clamp(29px,5vw,44px);line-height:1.12;letter-spacing:-.4px;margin:6px 0 10px}
 .art .meta{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px;padding:9px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .art .full{font-size:17px;line-height:1.68;color:var(--full);max-width:72ch;margin-bottom:16px}
@@ -10372,7 +10372,7 @@ function keyPoints(s){
     parts = s.title.split(/\s+[|–—]\s+|:\s+/).map(function(p){ return p.trim(); }).filter(function(p){ return p.length > 12; });
     if (!parts.length) parts = [s.title];
   }
-  return parts.slice(0, 4).map(function(p){ return truncate(p, 170); });
+  return parts.slice(0, 4).map(function(p){ return p.length > 280 ? truncate(p, 280) : p; }); /* watchdog fix 2026-11-23: key-point bullets are whole sentences — the old 170-char cut sliced them mid-sentence with a trailing "…" */
 }
 function articleUrl(id){
   return location.origin + location.pathname + "#/story/" + id;
