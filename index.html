@@ -10531,6 +10531,14 @@ function rebuildFromFeeds(){
      Originals — the Original leads in Top Stories, so its wire twin must
      not also appear in the stream. Exact-title dedup alone let the same
      story show twice on the homepage. */
+  /* Watchdog fix 2026-11-23: rebuild the alias map from scratch on
+     every pass. It used to persist across rebuilds, so an alias minted
+     when feed order put an older near-dup first (fresh "Longest-ever
+     UN climate talks end with no deal..." aliased to older "COP31
+     fails to reach major climate deal...") survived into a later
+     rebuild that kept the fresh story — clicking the fresh headline
+     then opened the stale, differently-headlined story. */
+  storyAliases = {};
   var seen = {}, uniq = [], keptTokens = [], k;
   var origTokens = ORIGINALS.map(function(o){ return titleTokens(o.title); });
   merged.forEach(function(s){
