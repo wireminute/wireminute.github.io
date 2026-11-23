@@ -9584,6 +9584,12 @@ function cleanText(raw){
      five years ago an is now" — "an" for "and". Fix the words, never the
      story, so the typo cannot reach a card or an article. */
   s = s.replace(/\bfive years ago an is now\b/g, "five years ago and is now");
+  /* Known source typo: Dawn's own feed headline reads "Portugese
+     foreign minister" — "Portugese" for "Portuguese". Fix the word,
+     never the story, so the typo cannot reach the ticker, a card or
+     an article. Watchdog fix 2026-11-23 (seen live in the ticker and
+     Live Updates; the Dawn feed itself carries the typo). */
+  s = s.replace(/\bPortugese\b/g, "Portuguese");
   /* Known source typo (watchdog 2026-11-22): Dawn's own feed headline
      reads "Mutiple roads closed for traffic in Karachi" — "Mutiple"
      for "Multiple", and the typo sits in Dawn's URL slug too. Fix the
