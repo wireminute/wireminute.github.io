@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Nov 2026 00:45:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 01:18:00 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Boom Breathes New Life Into San Francisco, but Fears of a Crash Are Growing</title>
+      <link>https://wireminute.com/s/san-francisco-ai-boom-crash-worries.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/san-francisco-ai-boom-crash-worries.html</guid>
+      <description>San Francisco is enjoying an artificial intelligence boom that is breathing new life into a city hollowed out by the pandemic, but some of the people building the technology now fear the sector is heading for a fall.</description>
+      <pubDate>Wed, 25 Nov 2026 01:18:00 GMT</pubDate>
+      <category>Business</category>
+      <enclosure url="https://wireminute.com/images/thumb-san-francisco-ai-boom-crash-worries.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Five Killed as Turkish Military Helicopter Crashes During Training Flight</title>
       <link>https://wireminute.com/s/turkey-helicopter-crash-eskisehir-five-killed.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Tue, 24 Nov 2026 07:38:24 GMT</pubDate>
       <category>Business</category>
       <enclosure url="https://wireminute.com/images/thumb-nvidia-reinstates-jensen-huang-ceo.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Magnitude 5.3 Earthquake Strikes Nepal, Tremors Felt Across India, Bhutan and China</title>
-      <link>https://wireminute.com/s/nepal-earthquake-koshi-province.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/nepal-earthquake-koshi-province.html</guid>
-      <description>An earthquake of magnitude 5.3 struck Nepal&apos;s eastern Koshi province early on Tuesday, sending tremors across parts of India, Bhutan, Bangladesh and China, seismologists said.</description>
-      <pubDate>Tue, 24 Nov 2026 07:06:56 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-nepal-earthquake-koshi-province.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
