@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Nov 2026 02:33:38 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 02:59:00 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>US Set to Unveil New Tariffs on 16 Trading Partners After Excess-Capacity Probe</title>
+      <link>https://wireminute.com/s/us-new-tariffs-16-trading-partners-section-301.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/us-new-tariffs-16-trading-partners-section-301.html</guid>
+      <description>The United States is poised to unveil new tariffs on 16 major trading partners, including China and the European Union, after an investigation into excess industrial capacity, with the announcement expected as soon as Tuesday.</description>
+      <pubDate>Wed, 25 Nov 2026 02:59:00 GMT</pubDate>
+      <category>Business</category>
+      <enclosure url="https://wireminute.com/images/thumb-us-new-tariffs-16-trading-partners-section-301.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Ábrego García Leaves US for Spain, Ending Two-Year Deportation Battle</title>
       <link>https://wireminute.com/s/kilmar-abrego-garcia-spain-departure.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Tue, 24 Nov 2026 10:47:35 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-gaza-meningitis-epidemic-alert-health-ministry.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Strike on Buses and Trucks in Yemen&apos;s Lahij Leaves 25 Dead or Missing</title>
-      <link>https://wireminute.com/s/yemen-lahij-strike-buses-trucks-25-killed.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/yemen-lahij-strike-buses-trucks-25-killed.html</guid>
-      <description>At least 25 people were killed or are missing after strikes hit buses and trucks in Yemen&apos;s southwestern Lahij province on Monday, Houthi media reported, while local officials put the death toll at 26.</description>
-      <pubDate>Tue, 24 Nov 2026 10:47:35 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-yemen-lahij-strike-buses-trucks-25-killed.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
