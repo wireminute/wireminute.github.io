@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Nov 2026 01:48:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 02:13:35 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CIA and National Intelligence Office Suffer Apparent Cyberattack on Unclassified System</title>
+      <link>https://wireminute.com/s/cia-odni-cyberattack-unclassified-system.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/cia-odni-cyberattack-unclassified-system.html</guid>
+      <description>The CIA and the Office of the Director of National Intelligence have suffered an apparent cyberattack affecting unclassified information, in the latest breach to hit the United States government.</description>
+      <pubDate>Wed, 25 Nov 2026 02:13:35 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-cia-odni-cyberattack-unclassified-system.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Eisenkot Clinches First Coalition Deal as Lieberman Joins Bid to Form Government</title>
       <link>https://wireminute.com/s/eisenkot-clinches-first-coalition-deal-lieberman.html</link>
@@ -197,6 +206,15 @@
       <enclosure url="https://wireminute.com/images/thumb-china-shanghai-chief-chen-jining-corruption-probe.jpg" type="image/jpeg" />
     </item>
     <item>
+      <title>Senegal Reinstated as Africa Cup of Nations Champions After Winning Court Appeal</title>
+      <link>https://wireminute.com/s/senegal-reinstated-afcon-2025-champions-cas-ruling.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/senegal-reinstated-afcon-2025-champions-cas-ruling.html</guid>
+      <description>Senegal have been reinstated as champions of the 2025 Africa Cup of Nations after sport&apos;s highest court backed their challenge to the decision that took the trophy away.</description>
+      <pubDate>Tue, 24 Nov 2026 15:44:26 GMT</pubDate>
+      <category>Sports</category>
+      <enclosure url="https://wireminute.com/images/thumb-senegal-reinstated-afcon-2025-champions-cas-ruling.jpg" type="image/jpeg" />
+    </item>
+    <item>
       <title>Two Arrested After Break-In at William and Kate&apos;s Country Home in Norfolk</title>
       <link>https://wireminute.com/s/two-arrested-anmer-hall-break-in-william-kate.html</link>
       <guid isPermaLink="true">https://wireminute.com/s/two-arrested-anmer-hall-break-in-william-kate.html</guid>
@@ -258,24 +276,6 @@
       <pubDate>Tue, 24 Nov 2026 10:24:10 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-dr-congo-aircraft-missing-rebels-claim-shoot-down-minembwe.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Japan to Pay ICC Dues Early to Shield Court From US Sanctions</title>
-      <link>https://wireminute.com/s/japan-pays-icc-2027-contribution-early-us-sanctions.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/japan-pays-icc-2027-contribution-early-us-sanctions.html</guid>
-      <description>Japan will pay its full 2027 contribution to the International Criminal Court by the end of the year, Prime Minister Sanae Takaichi said on Tuesday, stepping in to shield the court from American sanctions that threaten its funding.</description>
-      <pubDate>Tue, 24 Nov 2026 09:36:52 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-japan-pays-icc-2027-contribution-early-us-sanctions.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Nvidia Brings Back Jensen Huang as CEO as Shares Surge by a Third</title>
-      <link>https://wireminute.com/s/nvidia-reinstates-jensen-huang-ceo.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/nvidia-reinstates-jensen-huang-ceo.html</guid>
-      <description>Nvidia has reinstated Jensen Huang as chief executive, 11 days after he resigned, in a reversal driven by President Donald Trump that sent the chipmaker&apos;s shares up by nearly a third and lifted stock markets around the world.</description>
-      <pubDate>Tue, 24 Nov 2026 07:38:24 GMT</pubDate>
-      <category>Business</category>
-      <enclosure url="https://wireminute.com/images/thumb-nvidia-reinstates-jensen-huang-ceo.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
