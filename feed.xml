@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Nov 2026 02:13:35 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 02:33:38 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ábrego García Leaves US for Spain, Ending Two-Year Deportation Battle</title>
+      <link>https://wireminute.com/s/kilmar-abrego-garcia-spain-departure.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/kilmar-abrego-garcia-spain-departure.html</guid>
+      <description>Kilmar Ábrego García, a 31-year-old Salvadoran sheet-metal worker from Maryland, is leaving the United States for Spain on Tuesday, closing a legal fight that lasted nearly two years and at one point reached the country&apos;s highest court.</description>
+      <pubDate>Wed, 25 Nov 2026 02:33:38 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-kilmar-abrego-garcia-spain-departure.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>CIA and National Intelligence Office Suffer Apparent Cyberattack on Unclassified System</title>
       <link>https://wireminute.com/s/cia-odni-cyberattack-unclassified-system.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Tue, 24 Nov 2026 10:47:35 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-yemen-lahij-strike-buses-trucks-25-killed.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>DR Congo Says Aircraft Missing as Rebels Claim to Have Shot Down Plane</title>
-      <link>https://wireminute.com/s/dr-congo-aircraft-missing-rebels-claim-shoot-down-minembwe.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/dr-congo-aircraft-missing-rebels-claim-shoot-down-minembwe.html</guid>
-      <description>The Democratic Republic of Congo said it was searching for one of its aircraft after losing contact on Sunday, as rebels claimed to have shot down a warplane in the east.</description>
-      <pubDate>Tue, 24 Nov 2026 10:24:10 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-dr-congo-aircraft-missing-rebels-claim-shoot-down-minembwe.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
