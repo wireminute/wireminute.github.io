@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Nov 2026 01:18:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 01:48:00 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eisenkot Clinches First Coalition Deal as Lieberman Joins Bid to Form Government</title>
+      <link>https://wireminute.com/s/eisenkot-clinches-first-coalition-deal-lieberman.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/eisenkot-clinches-first-coalition-deal-lieberman.html</guid>
+      <description>Gadi Eisenkot has secured the first coalition agreement in his bid to form Israel&apos;s next government, with Avigdor Lieberman&apos;s party agreeing to join him after the two men met on Tuesday.</description>
+      <pubDate>Wed, 25 Nov 2026 01:48:00 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-eisenkot-clinches-first-coalition-deal-lieberman.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>AI Boom Breathes New Life Into San Francisco, but Fears of a Crash Are Growing</title>
       <link>https://wireminute.com/s/san-francisco-ai-boom-crash-worries.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Tue, 24 Nov 2026 09:36:52 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-japan-pays-icc-2027-contribution-early-us-sanctions.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Nvidia Brings Back Jensen Huang as CEO as Shares Surge by a Third</title>
-      <link>https://wireminute.com/s/nvidia-reinstates-jensen-huang-ceo.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/nvidia-reinstates-jensen-huang-ceo.html</guid>
-      <description>Nvidia has reinstated Jensen Huang as chief executive, 11 days after he resigned, in a reversal driven by President Donald Trump that sent the chipmaker&apos;s shares up by nearly a third and lifted stock markets around the world.</description>
-      <pubDate>Tue, 24 Nov 2026 07:38:24 GMT</pubDate>
-      <category>Business</category>
-      <enclosure url="https://wireminute.com/images/thumb-nvidia-reinstates-jensen-huang-ceo.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
