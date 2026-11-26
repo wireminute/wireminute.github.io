@@ -13039,6 +13039,45 @@ function parseFeed(xmlText, feed){
     var descRaw = itemText(it, "description") || itemText(it, "summary") || "";
     if (/<ol[\s>]/.test(descRaw) && /<li[\s>]/.test(descRaw)) continue; /* watchdog fix 2026-11-19: Google News wraps related headlines in an <ol><li><a>…</a><font>Publisher</font></li> list as the description — the cleaner concatenates them into garbled body text that also displays publisher names, and the item has no photo, so the article renders with the brand placeholder hero ("Grand Theft Auto 6 gets UK release…", live 2026-11-19 08:10 PKT). Such an item has no real body; drop it — the story itself is covered by the source-feed/BBC copy. Mirrors tools/regen_snapshot.mjs. */
     var img = itemImage(it, descRaw);
+    /* Watchdog fix 2026-11-26: Dawn/BBC feed descriptions embed <figure>
+       blocks whose <figcaption> is a photo caption ending in a credit
+       ("... —Courtesy PBSA"). The cleaner strips the tags but keeps the
+       caption text, so the credit renders mid-article as a normal-size
+       body paragraph (live 2026-11-26, Rana Irfan story t94il0). A credit
+       belongs ONLY as the article's last element, small muted grey
+       (owner rule) — lift it out as the story's credit (renderArticle
+       already renders s.credit that way, below the Share panel) and drop
+       every figure block from the body. A caption describes its own
+       figure's photo, not necessarily the hero: when the hero is that
+       figure's image the full caption is the credit; otherwise only the
+       trailing credit tail ("Courtesy PBSA") is kept, so the credit never
+       misdescribes the photo shown. Captions go through cleanBodyText,
+       so a publisher name anywhere in one drops it outright — no outlet
+       name may ever reach the page. Mirrors tools/regen_snapshot.mjs. */
+    var credit = "";
+    var _figs = descRaw.match(/<figure[\s\S]*?<\/figure>/gi) || [];
+    var _cap0 = "";
+    for (var _fi = 0; _fi < _figs.length; _fi++){
+      var _cap = /<figcaption[^>]*>([\s\S]*?)<\/figcaption>/i.exec(_figs[_fi]);
+      if (!_cap) continue;
+      var _ct = cleanBodyText(_cap[1]);
+      if (!_ct) continue;
+      if (!_cap0) _cap0 = _ct;
+      var _fsrc = /<img[^>]+src=["']([^"']+)["']/i.exec(_figs[_fi]);
+      if (_fsrc && img && (_fsrc[1] === img || hdImage(_fsrc[1]) === img || _fsrc[1] === hdImage(img))){
+        credit = "Photo: " + _ct;
+        break;
+      }
+    }
+    if (!credit && _cap0){
+      var _tail = /[-\u2013\u2014]\s*([^-\u2013\u2014()]+?)\s*$/.exec(_cap0) || /\(\s*([^()]+?)\s*\)\s*$/.exec(_cap0);
+      if (_tail && _tail[1]){
+        var _tt = _tail[1].trim();
+        credit = /^photo\b/i.test(_tt) ? _tt : "Photo: " + _tt;
+      }
+    }
+    descRaw = descRaw.replace(/<figure[\s\S]*?<\/figure>/gi, " ");
+    descRaw = descRaw.replace(/<figcaption[^>]*>[\s\S]*?<\/figcaption>/gi, " ");
     var desc = cleanBodyText(descRaw);
     desc = desc.replace(/Liverpool head coach Andoni Iraola/g, "Bournemouth head coach Andoni Iraola"); /* watchdog fix 2026-11-21: BBC Sport's own feed text mislabels Iraola (AFC Bournemouth's head coach; Liverpool's is Arne Slot) — the error was live on our site in the "Filming training by drones should be illegal" story (snapshot id 1ej7515). Mirrors tools/regen_snapshot.mjs. */
     if (desc.toLowerCase().indexOf(title.toLowerCase().slice(0, 42)) === 0) desc = "";
@@ -13048,7 +13087,7 @@ function parseFeed(xmlText, feed){
     if (desc.length < 20) continue; /* watchdog fix 2026-11-18: a feed item whose whole cleaned body is a fragment ("ai", 2 chars, on the Imelda Marcos story) renders as a junk article with a nonsense search excerpt — never surfaces; mirrors tools/regen_snapshot.mjs. Shortest legit body in the 2026-11-18 snapshot was 54 chars, so 20 is a safe floor. */
     if (new RegExp("(?:the\\s+)?(?:" + PUBLISHER_ALT + "|New York Times)\\s*$", "i").test(desc)) continue; /* watchdog fix 2026-11-20: Google News related-headline fragment ending in a bare outlet name with no separator ("T. A. 6 Review: This Release Will Steal Your Heart The New York Times", GTA 6 item r8mog, live 2026-11-20) — the cleaner only strips dash/colon attributions, so the fragment survived with a publisher name in the search excerpt and article body; the story itself is covered by the BBC copy and our Original. A real article body ends with a period, never with a bare outlet name. "New York Times" is NOT in PUBLISHER_ALT on purpose: scrubPublisherSentences would drop the legit "New York Times DealBook Summit" sentence. Mirrors tools/regen_snapshot.mjs. */
     var sec = normSec(feed.sec === "auto" ? classify(title, desc, "world") : (refileSec(title) || feed.sec));
-    out.push({ id: storyId(title, d), title: title, time: d, summary: summary, full: desc, img: img, sec: sec });
+    out.push({ id: storyId(title, d), title: title, time: d, summary: summary, full: desc, img: img, sec: sec, credit: credit });
   }
   return out;
 }
