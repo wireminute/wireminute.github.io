@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Nov 2026 20:57:06 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 23:07:16 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CIA Waterboarded More Detainees Than It Admitted, Newly Released Files Suggest</title>
+      <link>https://wireminute.com/s/cia-waterboarded-more-detainees-than-admitted.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/cia-waterboarded-more-detainees-than-admitted.html</guid>
+      <description>The CIA may have waterboarded more detainees than the three it has officially acknowledged, according to newly released documents that describe an additional case at a secret prison in Afghanistan.</description>
+      <pubDate>Thu, 26 Nov 2026 23:07:16 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-cia-waterboarded-more-detainees-than-admitted.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Israel Threatens New Gaza Operation That Would Displace One Million People</title>
       <link>https://wireminute.com/s/israel-katz-threatens-displace-million-gazans.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Thu, 26 Nov 2026 09:40:00 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-explosion-bangkok-bangchak-refinery-fire.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>German Boat Dealer Suspected of Supplying Smugglers Behind a Third of Channel Crossings</title>
-      <link>https://wireminute.com/s/german-boat-dealer-suspected-channel-smuggling-gangs.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/german-boat-dealer-suspected-channel-smuggling-gangs.html</guid>
-      <description>A small boat dealer in western Germany is suspected of supplying the smuggling gangs behind nearly a third of the small-boat crossings to Britain this year, according to a joint investigation by European broadcasters and newspapers.</description>
-      <pubDate>Thu, 26 Nov 2026 09:02:00 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-german-boat-dealer-suspected-channel-smuggling-gangs.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
