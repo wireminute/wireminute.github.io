@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 19:09:55 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 19:40:00 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kenyan Cult Leader Convicted over 123 Deaths in Shakahola Starvation Case</title>
+      <link>https://wireminute.com/s/kenya-cult-leader-mackenzie-convicted-123-deaths.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/kenya-cult-leader-mackenzie-convicted-123-deaths.html</guid>
+      <description>A court in Mombasa has convicted Kenyan preacher Paul Mackenzie of the manslaughter of 123 followers he ordered to starve themselves to death in the Shakahola forest, the final verdict in one of the deadliest cult cases of modern times.</description>
+      <pubDate>Fri, 27 Nov 2026 19:40:00 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-kenya-cult-leader-mackenzie-convicted-123-deaths.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Mexico Files Formal Complaint with US over DEA Tip Line on Alleged Drug Traffickers</title>
       <link>https://wireminute.com/s/mexico-files-complaint-us-dea-tip-line.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Thu, 26 Nov 2026 16:10:45 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-iran-two-tankers-mines-khasab-thursday.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Italians Killed in Kuwait Drone Attack Named as Strike Hit Several Bases</title>
-      <link>https://wireminute.com/s/kuwait-two-italians-killed-iranian-drone-attack.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/kuwait-two-italians-killed-iranian-drone-attack.html</guid>
-      <description>The two Italian technicians killed in a drone attack in Kuwait have been named as Antonio Saccoccio and Emanuele Lo Russo, as new details emerged that the strike hit several military sites and destroyed an air-defence unit.</description>
-      <pubDate>Thu, 26 Nov 2026 16:10:45 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-kuwait-two-italians-killed-iranian-drone-attack.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
