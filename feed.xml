@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 21:18:40 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 21:42:00 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Millions Locked Out of UK Benefits and Pension Services After Serious Cyber Incident</title>
+      <link>https://wireminute.com/s/uk-dwp-cyber-incident-benefits-pensions-offline.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/uk-dwp-cyber-incident-benefits-pensions-offline.html</guid>
+      <description>Millions of people in Britain have been left unable to reach online benefits and pension services after the government department that runs them shut its systems down following what its minister called a serious cyber incident.</description>
+      <pubDate>Fri, 27 Nov 2026 21:42:00 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-uk-dwp-cyber-incident-benefits-pensions-offline.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>OpenAI Hits Back at Apple With Trade Secrets Countersuit in AI Device Race</title>
       <link>https://wireminute.com/s/openai-countersues-apple-trade-secrets.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Thu, 26 Nov 2026 19:15:00 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-trump-calls-gdp-data-fake-demands-investigation.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Guinea-Bissau Junta Delays Elections by Two Years, Extending Military Rule to 2028</title>
-      <link>https://wireminute.com/s/guinea-bissau-election-delayed-2028.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/guinea-bissau-election-delayed-2028.html</guid>
-      <description>Guinea-Bissau&apos;s military rulers have delayed presidential and parliamentary elections by almost two years, pushing back the vote that was supposed to restore civilian rule until November 2028.</description>
-      <pubDate>Thu, 26 Nov 2026 18:29:56 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-guinea-bissau-election-delayed-2028.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
