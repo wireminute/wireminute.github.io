@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 10:14:20 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 10:41:57 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>News Agency AFP Takes Content Platform Offline After Cyberattack</title>
+      <link>https://wireminute.com/s/afp-cyberattack-forum-platform-offline.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/afp-cyberattack-forum-platform-offline.html</guid>
+      <description>One of the world&apos;s biggest news agencies has taken its main content platform offline after a cyberattack in the early hours of Thursday, and says it does not yet know who was behind it.</description>
+      <pubDate>Fri, 27 Nov 2026 10:41:57 GMT</pubDate>
+      <category>Technology</category>
+      <enclosure url="https://wireminute.com/images/thumb-afp-cyberattack-forum-platform-offline.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Zelenskyy Says Calling Putin a Friend Is Like Calling Hitler a Friend</title>
       <link>https://wireminute.com/s/zelenskyy-trump-putin-friend-strange-hitler-comparison.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Thu, 26 Nov 2026 14:25:37 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-diesel-tanker-sinks-off-ibiza-one-crew-dead.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>US Proposes New Tariffs on 14 Trading Partners as China and EU Push Back</title>
-      <link>https://wireminute.com/s/us-proposes-new-tariffs-14-trading-partners-china-eu-push-back.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/us-proposes-new-tariffs-14-trading-partners-china-eu-push-back.html</guid>
-      <description>The United States has proposed new tariffs on imports from 14 trading partners, including China and the European Union, drawing protests from governments across Asia and Europe that say they will negotiate but could hit back.</description>
-      <pubDate>Thu, 26 Nov 2026 13:26:39 GMT</pubDate>
-      <category>Business</category>
-      <enclosure url="https://wireminute.com/images/thumb-us-proposes-new-tariffs-14-trading-partners-china-eu-push-back.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
