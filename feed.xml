@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Nov 2026 23:33:56 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 01:16:09 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trump Says Victory Over Iran Is at Hand and Offers Tehran a Chance to Make a Deal</title>
+      <link>https://wireminute.com/s/trump-victory-at-hand-iran-thanksgiving-call.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/trump-victory-at-hand-iran-thanksgiving-call.html</guid>
+      <description>President Donald Trump told American troops on Thursday that the United States has &quot;victory at hand&quot; in its war on Iran, while offering Tehran another chance to reach a deal and avoid further bloodshed.</description>
+      <pubDate>Fri, 27 Nov 2026 01:16:09 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-trump-victory-at-hand-iran-thanksgiving-call.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Zelenskyy Says US Is Too Focused on the Middle East and Not Pressing Russia Hard Enough</title>
       <link>https://wireminute.com/s/zelenskyy-us-too-focused-middle-east-patriot-delays.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Thu, 26 Nov 2026 10:16:29 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-israeli-strikes-kill-gaza-deputy-education-minister-nine-dead.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Every Child in America to Get Two SpaceX Shares, Musk Says in $18 Billion Pledge</title>
-      <link>https://wireminute.com/s/musk-spacex-shares-every-child-america.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/musk-spacex-shares-every-child-america.html</guid>
-      <description>Elon Musk has pledged two shares in SpaceX to every child in the United States, a giveaway worth about $18 billion that doubles a promise he made last month.</description>
-      <pubDate>Thu, 26 Nov 2026 10:01:00 GMT</pubDate>
-      <category>Business</category>
-      <enclosure url="https://wireminute.com/images/thumb-musk-spacex-shares-children.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
