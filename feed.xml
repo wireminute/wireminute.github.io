@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 01:16:09 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 01:49:34 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>One Worker Killed as Projectile Hits Saudi Arabia&apos;s Jazan Oil Refinery</title>
+      <link>https://wireminute.com/s/strike-jazan-refinery-kills-nepali-worker.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/strike-jazan-refinery-kills-nepali-worker.html</guid>
+      <description>A projectile struck Saudi Aramco&apos;s Jazan oil refinery in southwestern Saudi Arabia on Thursday, killing a Nepali worker and injuring several others, the Saudi Energy Ministry said.</description>
+      <pubDate>Fri, 27 Nov 2026 01:49:34 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-strike-jazan-refinery-kills-nepali-worker.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Trump Says Victory Over Iran Is at Hand and Offers Tehran a Chance to Make a Deal</title>
       <link>https://wireminute.com/s/trump-victory-at-hand-iran-thanksgiving-call.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Thu, 26 Nov 2026 10:34:30 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-israel-ready-strike-iran-without-us-netanyahu-cabinet.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Nine Killed in Gaza Strikes Overnight, Including Deputy Education Minister</title>
-      <link>https://wireminute.com/s/israeli-strikes-kill-gaza-deputy-education-minister-nine-dead.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/israeli-strikes-kill-gaza-deputy-education-minister-nine-dead.html</guid>
-      <description>Israeli strikes and gunfire killed at least nine Palestinians across Gaza overnight, medics said, including the territory&apos;s deputy education minister and his wife, in a third straight night of attacks despite a ceasefire that has held for more than a year.</description>
-      <pubDate>Thu, 26 Nov 2026 10:16:29 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-israeli-strikes-kill-gaza-deputy-education-minister-nine-dead.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
