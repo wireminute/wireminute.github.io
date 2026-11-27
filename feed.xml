@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 08:23:58 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 08:48:01 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Marital Rape Still Legal Across Much of South Asia, Leaving Millions of Wives Unprotected, Report Finds</title>
+      <link>https://wireminute.com/s/marital-rape-still-legal-south-asia-report.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/marital-rape-still-legal-south-asia-report.html</guid>
+      <description>Millions of married women across South Asia have no legal protection against rape by their husbands, a new regional report has found, with the law in five of the region&apos;s eight countries still treating forced sex inside marriage as no crime at all.</description>
+      <pubDate>Fri, 27 Nov 2026 08:48:01 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-marital-rape-still-legal-south-asia-report.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Spain Votes on Sunday in Snap Election That Could Bring the Far Right to Power</title>
       <link>https://wireminute.com/s/spain-votes-sunday-snap-election-far-right-vox.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Thu, 26 Nov 2026 12:26:00 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-thanksgiving-noreaster-leaves-325000-without-power-parade-postponed.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Hackers Stole FIFA Data in Cyber Attack, Governing Body Confirms</title>
-      <link>https://wireminute.com/s/fifa-confirms-internal-data-stolen-cyberattack.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/fifa-confirms-internal-data-stolen-cyberattack.html</guid>
-      <description>FIFA has confirmed hackers broke into its systems in a criminal cyberattack and stole internal personal and business information, the world football governing body said on Thursday.</description>
-      <pubDate>Thu, 26 Nov 2026 11:52:00 GMT</pubDate>
-      <category>Sports</category>
-      <enclosure url="https://wireminute.com/images/thumb-fifa-confirms-internal-data-stolen-cyberattack.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
