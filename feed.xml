@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 20:40:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 21:18:40 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenAI Hits Back at Apple With Trade Secrets Countersuit in AI Device Race</title>
+      <link>https://wireminute.com/s/openai-countersues-apple-trade-secrets.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/openai-countersues-apple-trade-secrets.html</guid>
+      <description>OpenAI has filed a countersuit against Apple, accusing the iPhone maker of stealing its trade secrets and leaning on suppliers to slow its push into AI-powered devices, in a legal fight that pits two of the biggest names in technology against each other.</description>
+      <pubDate>Fri, 27 Nov 2026 21:18:40 GMT</pubDate>
+      <category>Technology</category>
+      <enclosure url="https://wireminute.com/images/thumb-openai-countersues-apple-trade-secrets.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Hamas Chief&apos;s Last Surviving Son Escapes Gaza Strike That Killed Four</title>
       <link>https://wireminute.com/s/israel-kills-four-gaza-al-hayya-son-survives-strike.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Thu, 26 Nov 2026 17:25:00 GMT</pubDate>
       <category>Business</category>
       <enclosure url="https://wireminute.com/images/thumb-sap-considers-10000-job-cuts-ai-restructuring.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Teenager&apos;s Death in Colombia Raid Fuels Questions Over President&apos;s Security Crackdown</title>
-      <link>https://wireminute.com/s/colombia-teen-death-security-crackdown.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/colombia-teen-death-security-crackdown.html</guid>
-      <description>The family of an 18-year-old killed in a military operation in northern Colombia says he was a civilian farmworker, not a fighter, in a case that has become the sharpest test yet of the new president&apos;s hardline campaign against armed groups.</description>
-      <pubDate>Thu, 26 Nov 2026 17:24:00 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-colombia-teen-death-security-crackdown.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
