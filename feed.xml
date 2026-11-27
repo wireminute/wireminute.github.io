@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 03:57:14 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 08:23:58 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spain Votes on Sunday in Snap Election That Could Bring the Far Right to Power</title>
+      <link>https://wireminute.com/s/spain-votes-sunday-snap-election-far-right-vox.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/spain-votes-sunday-snap-election-far-right-vox.html</guid>
+      <description>Spaniards head to the polls on Sunday in a snap general election that could hand the far right a share of power for the first time since Spain became a democracy after Franco.</description>
+      <pubDate>Fri, 27 Nov 2026 08:23:58 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-spain-votes-sunday-snap-election-far-right-vox.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Kenyan Man Wrongly Sentenced to Death Over Attack on British Couple Sues London&apos;s Metropolitan Police</title>
       <link>https://wireminute.com/s/ali-kololo-wrongly-sentenced-death-sues-met.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Thu, 26 Nov 2026 11:52:00 GMT</pubDate>
       <category>Sports</category>
       <enclosure url="https://wireminute.com/images/thumb-fifa-confirms-internal-data-stolen-cyberattack.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Iraq Denies Troop Move Into Kurdistan as Court Backs Baghdad&apos;s Control of Borders</title>
-      <link>https://wireminute.com/s/iraq-denies-troop-move-kurdistan-court-backs-baghdad.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/iraq-denies-troop-move-kurdistan-court-backs-baghdad.html</guid>
-      <description>Iraq&apos;s government has denied reports that federal troops are moving into the semi-autonomous Kurdistan region, after a court ruled Baghdad can deploy forces to secure the country&apos;s international borders, including in Kurdish-administered territory.</description>
-      <pubDate>Thu, 26 Nov 2026 11:47:00 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-iraq-denies-troop-move-kurdistan-court-backs-baghdad.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
