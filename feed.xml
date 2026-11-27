@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 01:49:34 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 02:35:12 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zelenskyy Warns of Major Russian Attack on Power Grid as Trump Tells Putin to Pull Back</title>
+      <link>https://wireminute.com/s/zelenskyy-warns-major-russian-attack-power-grid.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/zelenskyy-warns-major-russian-attack-power-grid.html</guid>
+      <description>Ukrainian President Volodymyr Zelenskyy has warned that Russia is preparing another major attack on Ukraine&apos;s energy infrastructure, as US President Donald Trump urged Vladimir Putin to pull back military aggression across Europe.</description>
+      <pubDate>Fri, 27 Nov 2026 02:35:12 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-zelenskyy-warns-major-russian-attack-power-grid.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>One Worker Killed as Projectile Hits Saudi Arabia&apos;s Jazan Oil Refinery</title>
       <link>https://wireminute.com/s/strike-jazan-refinery-kills-nepali-worker.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Thu, 26 Nov 2026 10:46:37 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-north-korea-halts-military-aid-russia-ukraine-intelligence.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Israel Says It Can Hit Iran Alone as Netanyahu Convenes Security Cabinet</title>
-      <link>https://wireminute.com/s/israel-ready-strike-iran-without-us-netanyahu-cabinet.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/israel-ready-strike-iran-without-us-netanyahu-cabinet.html</guid>
-      <description>Israel&apos;s military says it is ready to strike Iran at any moment, even without American help, as Prime Minister Benjamin Netanyahu prepares to convene his security cabinet on Thursday night.</description>
-      <pubDate>Thu, 26 Nov 2026 10:34:30 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-israel-ready-strike-iran-without-us-netanyahu-cabinet.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
