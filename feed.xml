@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 20:10:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 20:40:00 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hamas Chief&apos;s Last Surviving Son Escapes Gaza Strike That Killed Four</title>
+      <link>https://wireminute.com/s/israel-kills-four-gaza-al-hayya-son-survives-strike.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/israel-kills-four-gaza-al-hayya-son-survives-strike.html</guid>
+      <description>Hamas leader Khalil al-Hayya&apos;s last surviving son has escaped an Israeli air strike on his family in Gaza, as four other Palestinians were killed in separate attacks across the territory on Friday.</description>
+      <pubDate>Fri, 27 Nov 2026 20:40:00 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-israel-kills-four-gaza-al-hayya-son-survives-strike.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Hackers Breach US Air Force&apos;s Main Cloud Platform, Putting Sensitive Military Data at Risk</title>
       <link>https://wireminute.com/s/hackers-breach-us-air-force-cloud-one-platform.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Thu, 26 Nov 2026 17:24:00 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-colombia-teen-death-security-crackdown.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Nearly 100 Labour MPs Urge Burnham to Block Rosebank Oilfield</title>
-      <link>https://wireminute.com/s/labour-mps-oppose-rosebank-oilfield-letter.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/labour-mps-oppose-rosebank-oilfield-letter.html</guid>
-      <description>Ninety-two Labour MPs, including ministerial aides and frontbenchers, have written to Prime Minister Andy Burnham urging him not to approve drilling at the Rosebank oilfield, in the first big internal revolt of his premiership.</description>
-      <pubDate>Thu, 26 Nov 2026 16:42:44 GMT</pubDate>
-      <category>Politics</category>
-      <enclosure url="https://wireminute.com/images/thumb-labour-mps-oppose-rosebank-oilfield-letter.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
