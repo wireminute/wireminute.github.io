@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 19:40:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 20:10:00 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hackers Breach US Air Force&apos;s Main Cloud Platform, Putting Sensitive Military Data at Risk</title>
+      <link>https://wireminute.com/s/hackers-breach-us-air-force-cloud-one-platform.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/hackers-breach-us-air-force-cloud-one-platform.html</guid>
+      <description>Hackers have broken into Cloud One, the cloud system the US Air Force uses to run scores of its applications, in an intrusion found in recent weeks while the platform was being upgraded.</description>
+      <pubDate>Fri, 27 Nov 2026 20:10:00 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-hackers-breach-us-air-force-cloud-one-platform.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Kenyan Cult Leader Convicted over 123 Deaths in Shakahola Starvation Case</title>
       <link>https://wireminute.com/s/kenya-cult-leader-mackenzie-convicted-123-deaths.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Thu, 26 Nov 2026 16:42:44 GMT</pubDate>
       <category>Politics</category>
       <enclosure url="https://wireminute.com/images/thumb-labour-mps-oppose-rosebank-oilfield-letter.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Two More Tankers Hit Mines Near Khasab, Iran&apos;s Guards Say</title>
-      <link>https://wireminute.com/s/iran-two-tankers-mines-khasab-thursday.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/iran-two-tankers-mines-khasab-thursday.html</guid>
-      <description>Two more oil tankers exploded and caught fire after hitting naval mines north of Oman&apos;s Khasab port, Iran&apos;s Revolutionary Guards said on Thursday, in the latest attack on shipping in the Strait of Hormuz.</description>
-      <pubDate>Thu, 26 Nov 2026 16:10:45 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-iran-two-tankers-mines-khasab-thursday.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
