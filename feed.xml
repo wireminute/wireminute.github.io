@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 02:35:12 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 02:58:05 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Zealand&apos;s Ruling Coalition Loses Its Majority in Final Count, Leaving a Hung Parliament</title>
+      <link>https://wireminute.com/s/new-zealand-coalition-loses-majority-final-count.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/new-zealand-coalition-loses-majority-final-count.html</guid>
+      <description>New Zealand&apos;s ruling coalition has lost its parliamentary majority in the final election count, leaving Prime Minister Christopher Luxon dependent on a small centrist party to stay in power.</description>
+      <pubDate>Fri, 27 Nov 2026 02:58:05 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-new-zealand-coalition-loses-majority-final-count.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Zelenskyy Warns of Major Russian Attack on Power Grid as Trump Tells Putin to Pull Back</title>
       <link>https://wireminute.com/s/zelenskyy-warns-major-russian-attack-power-grid.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Thu, 26 Nov 2026 11:05:00 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-russia-hits-two-grain-ships-odesa-ukraine-pm.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>North Korea Halts Military Aid to Russia After Rift Over South Korea, Ukrainian Intelligence Says</title>
-      <link>https://wireminute.com/s/north-korea-halts-military-aid-russia-ukraine-intelligence.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/north-korea-halts-military-aid-russia-ukraine-intelligence.html</guid>
-      <description>North Korea has temporarily suspended military aid to Russia, including deliveries of ballistic missiles and artillery ammunition, after a diplomatic dispute over Moscow&apos;s position on South Korea, Ukraine&apos;s military intelligence said on Thursday.</description>
-      <pubDate>Thu, 26 Nov 2026 10:46:37 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-north-korea-halts-military-aid-russia-ukraine-intelligence.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
