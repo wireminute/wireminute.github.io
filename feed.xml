@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 10:41:57 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 11:09:13 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Australia Sanctions Two Men Accused of Running Iran-Backed Arson Attacks on Synagogue and Kosher Restaurant</title>
+      <link>https://wireminute.com/s/australia-sanctions-iran-linked-antisemitic-arson-suspects.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/australia-sanctions-iran-linked-antisemitic-arson-suspects.html</guid>
+      <description>Australia has placed counter-terrorism financing sanctions on two men it says orchestrated antisemitic arson attacks on a Sydney kosher restaurant and a Melbourne synagogue in 2024 on behalf of Iran&apos;s Revolutionary Guard Corps, naming them publicly for the first time.</description>
+      <pubDate>Fri, 27 Nov 2026 11:09:13 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-australia-sanctions-iran-linked-antisemitic-arson-suspects.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>News Agency AFP Takes Content Platform Offline After Cyberattack</title>
       <link>https://wireminute.com/s/afp-cyberattack-forum-platform-offline.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Thu, 26 Nov 2026 15:08:41 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-depardieu-face-rape-trial-paris-court-rules.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Ibiza Tanker Found Only Partly Submerged as Crews Watch for Diesel Spill</title>
-      <link>https://wireminute.com/s/diesel-tanker-sinks-off-ibiza-one-crew-dead.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/diesel-tanker-sinks-off-ibiza-one-crew-dead.html</guid>
-      <description>The diesel tanker that capsized off Ibiza has been found only partly submerged, with its keel sticking out of the water, as Spanish crews work to stop up to 7,000 tonnes of diesel leaking into the sea.</description>
-      <pubDate>Thu, 26 Nov 2026 14:25:37 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-diesel-tanker-sinks-off-ibiza-one-crew-dead.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
