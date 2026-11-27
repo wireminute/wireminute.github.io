@@ -13279,9 +13279,15 @@ function itemText(item, tag){
 /* Watchdog fix 2026-11-14: Dawn serves a grey avatar silhouette as the
    item image for stories with no photo (opinion pieces). It is a valid
    image file, so <img onerror> never fires -- drop it so the story falls
-   back to the brand placeholder instead of a grey silhouette. */
+   back to the brand placeholder instead of a grey silhouette.
+   Watchdog fix 2026-11-27: Dawn re-uploads the same 858-byte silhouette
+   under a new date-stamped URL (2026-11-27: .../270542093919323.webp,
+   byte-identical to the 2026-11-14 URL .../140517473919323.webp) -- the
+   exact-URL match went stale and the silhouette reached the grid live
+   ("More credit, fewer women", 2026-11-27 09:23 PKT). Match the stable
+   trailing image id 3919323 instead of the full URL. */
 var DAWN_NO_PHOTO_IMG = "https://i.dawn.com/large/2026/11/140517473919323.webp";
-function isStubImage(u){ return u === DAWN_NO_PHOTO_IMG; }
+function isStubImage(u){ return !!u && (/^https?:\/\/i\.dawn\.com\/(large|thumbnail)\/\d{4}\/\d{2}\/\d{8}3919323\.webp$/i.test(u) || u === DAWN_NO_PHOTO_IMG); }
 /* HD rule (owner 2026-11-14): BBC ichef thumbnails arrive at /standard/240/;
    always upgrade to the /standard/976/ variant (verified live). */
 function hdImage(u){ return u ? u.replace(/\/standard\/240\//, "/standard/976/") : u; }
