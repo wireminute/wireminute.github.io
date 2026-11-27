@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 22:19:49 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 22:49:29 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>US Disables Another Ship Trying to Run Iran Blockade in Gulf of Oman</title>
+      <link>https://wireminute.com/s/us-disables-pacific-archer-iran-blockade-gulf-oman.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/us-disables-pacific-archer-iran-blockade-gulf-oman.html</guid>
+      <description>The United States said it disabled a commercial ship in the Gulf of Oman on Thursday after the vessel tried to run the naval blockade of Iranian ports, the latest ship to be stopped as Tehran vowed to break the embargo.</description>
+      <pubDate>Fri, 27 Nov 2026 22:49:29 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-us-disables-pacific-archer-iran-blockade-gulf-oman.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>SAP Confirms Security Incident After Reports of Stolen GitHub Tokens and Altered Code</title>
       <link>https://wireminute.com/s/sap-confirms-security-incident-github-tokens-project-granite.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Thu, 26 Nov 2026 20:19:31 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-huntingdon-train-attacker-convicted-14-attempted-murder.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>US Judge Blocks FCC Early Review of ABC Station Licenses</title>
-      <link>https://wireminute.com/s/judge-blocks-fcc-abc-license-review.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/judge-blocks-fcc-abc-license-review.html</guid>
-      <description>A federal judge in Washington has barred the Federal Communications Commission from carrying out an early review of the licenses of eight Disney-owned ABC television stations, ruling that the move looked like retaliation against the network for programming the Trump administration disliked.</description>
-      <pubDate>Thu, 26 Nov 2026 19:38:28 GMT</pubDate>
-      <category>Politics</category>
-      <enclosure url="https://wireminute.com/images/thumb-judge-blocks-fcc-abc-license-review.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
