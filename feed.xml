@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 09:53:24 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 10:14:20 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zelenskyy Says Calling Putin a Friend Is Like Calling Hitler a Friend</title>
+      <link>https://wireminute.com/s/zelenskyy-trump-putin-friend-strange-hitler-comparison.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/zelenskyy-trump-putin-friend-strange-hitler-comparison.html</guid>
+      <description>Volodymyr Zelenskyy has said it is strange for Donald Trump to call Vladimir Putin his friend, likening it to calling Adolf Hitler a friend during the Second World War.</description>
+      <pubDate>Fri, 27 Nov 2026 10:14:20 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-zelenskyy-trump-putin-friend-strange-hitler-comparison.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Goyal Says India-US Trade Deal Is Nearly Done as Tariff Threat Hangs Over Talks</title>
       <link>https://wireminute.com/s/india-us-trade-deal-close-goyal-says.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Thu, 26 Nov 2026 13:26:39 GMT</pubDate>
       <category>Business</category>
       <enclosure url="https://wireminute.com/images/thumb-us-proposes-new-tariffs-14-trading-partners-china-eu-push-back.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>DR Congo Summons Uganda Envoy After General Backs Rebel Capture of Walikale</title>
-      <link>https://wireminute.com/s/dr-congo-summons-uganda-envoy-muhoozi-walikale-threats.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/dr-congo-summons-uganda-envoy-muhoozi-walikale-threats.html</guid>
-      <description>The Democratic Republic of Congo has summoned Uganda&apos;s top diplomat in Kinshasa after Uganda&apos;s military chief publicly backed a rebel bid to seize Walikale, a mineral-rich territory in the country&apos;s east.</description>
-      <pubDate>Thu, 26 Nov 2026 13:09:32 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-dr-congo-summons-uganda-envoy-muhoozi-walikale-threats.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
