@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 21:42:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 22:19:49 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SAP Confirms Security Incident After Reports of Stolen GitHub Tokens and Altered Code</title>
+      <link>https://wireminute.com/s/sap-confirms-security-incident-github-tokens-project-granite.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/sap-confirms-security-incident-github-tokens-project-granite.html</guid>
+      <description>SAP has confirmed a security incident in its software development systems after reports that attackers stole employee access tokens and used them to copy and alter source code on GitHub, in an incident the company is tracking under the name Project Granite.</description>
+      <pubDate>Fri, 27 Nov 2026 22:19:49 GMT</pubDate>
+      <category>Technology</category>
+      <enclosure url="https://wireminute.com/images/thumb-sap-confirms-security-incident-github-tokens-project-granite.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Millions Locked Out of UK Benefits and Pension Services After Serious Cyber Incident</title>
       <link>https://wireminute.com/s/uk-dwp-cyber-incident-benefits-pensions-offline.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Thu, 26 Nov 2026 19:38:28 GMT</pubDate>
       <category>Politics</category>
       <enclosure url="https://wireminute.com/images/thumb-judge-blocks-fcc-abc-license-review.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Trump Calls Pre-Election GDP Figures &apos;Fake&apos; and Demands Investigation</title>
-      <link>https://wireminute.com/s/trump-calls-gdp-data-fake-demands-investigation.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/trump-calls-gdp-data-fake-demands-investigation.html</guid>
-      <description>Donald Trump has accused his own Commerce Department of deliberately releasing incorrect economic growth figures before this month&apos;s midterm elections, calling the numbers &apos;fake&apos; and demanding an immediate investigation.</description>
-      <pubDate>Thu, 26 Nov 2026 19:15:00 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-trump-calls-gdp-data-fake-demands-investigation.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
