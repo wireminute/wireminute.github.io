@@ -13851,6 +13851,24 @@ function titlesNearDup(a, b){ return tokensNearDup(titleTokens(a), titleTokens(b
    tokensNearDup on the pair is true (0.73). Keep-first, newest-first
    lists keep the newest twin; Originals are never dropped (their own id
    is in origIds) but their wire twins are, matching rebuildFromFeeds. */
+/* Watchdog fix 2026-11-28: which near-dup twin survives must be decided
+   by content, never by arrival order. rebuildFromFeeds runs once per feed
+   arrival and merged order depends on which feed still carries a story,
+   so first-wins let a shared #/story/<id> link flip between two versions
+   of a developing story across ticks (live 2026-11-28: Gaza MSF story
+   1ykvvq6 opened the full 12:41 PM copy at 14:21 PKT and the thin
+   one-sentence 08:45 copy at 14:34, after the fuller copy rotated out of
+   its feed and only survived via the appended old-stream tail). An
+   Original always beats a wire twin; otherwise the fuller body wins and
+   ties go to the newer time. Used by the rebuildFromFeeds near-dup pass
+   and by dedupeNearDup below, so the live stream and the persisted
+   cache agree on the survivor. */
+function storyBetter(a, b){
+  if (!!a.original !== !!b.original) return !!a.original;
+  var fa = (a.full || "").length, fb = (b.full || "").length;
+  if (fa !== fb) return fa > fb;
+  return a.time > b.time;
+}
 function dedupeNearDup(list){
   var kept = [], keptTokens = [], origIds = {};
   var origTokens = ORIGINALS.map(function(o){ origIds[o.id] = 1; return titleTokens(o.title); });
@@ -13858,7 +13876,10 @@ function dedupeNearDup(list){
     if (!s || !s.title) return;
     var tt = titleTokens(s.title), k;
     if (!origIds[s.id]){
-      for (k = 0; k < keptTokens.length; k++) if (tokensNearDup(tt, keptTokens[k])) return;
+      for (k = 0; k < keptTokens.length; k++) if (tokensNearDup(tt, keptTokens[k])){
+        if (storyBetter(s, kept[k])){ kept[k] = s; keptTokens[k] = tt; }
+        return;
+      }
       for (k = 0; k < origTokens.length; k++) if (tokensNearDup(tt, origTokens[k])) return;
     }
     keptTokens.push(tt); kept.push(s);
@@ -14805,9 +14826,36 @@ function rebuildFromFeeds(){
        dropped as a near-duplicate, remember which kept story it is — a
        later #/story/<dropped-id> then opens the surviving copy instead
        of falling back to the homepage. */
-    if (seen[key]){ storyAliases[s.id] = storyAliases[seen[key]] || seen[key]; return; }
+    if (seen[key]){
+      /* Same headline re-served: the id is identical (title hash), so
+         the link cannot flip — but the kept copy can still be the thin
+         one if it arrived first. Keep the fuller copy in the slot. */
+      var svId = seen[key], svIdx = -1;
+      for (var j = 0; j < uniq.length; j++) if (uniq[j].id === svId){ svIdx = j; break; }
+      if (svIdx >= 0 && storyBetter(s, uniq[svIdx])) uniq[svIdx] = s;
+      else storyAliases[s.id] = storyAliases[svId] || svId;
+      return;
+    }
     var tt = titleTokens(s.title);
-    for (k = 0; k < keptTokens.length; k++) if (tokensNearDup(tt, keptTokens[k])){ storyAliases[s.id] = storyAliases[uniq[k].id] || uniq[k].id; return; }
+    for (k = 0; k < keptTokens.length; k++) if (tokensNearDup(tt, keptTokens[k])){
+      if (storyBetter(s, uniq[k])){
+        /* The newcomer is the fuller copy of the same developing story:
+           it takes the survivor slot and the previously kept twin (and
+           anything already aliased to it) now points at it, so a shared
+           #/story/<id> link keeps opening the fuller version on every
+           tick instead of flipping with feed order (watchdog fix
+           2026-11-28, Gaza MSF 1ykvvq6). */
+        var oldKey = uniq[k].title.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+        storyAliases[uniq[k].id] = s.id;
+        seen[oldKey] = s.id;
+        seen[key] = s.id;
+        keptTokens[k] = tt;
+        uniq[k] = s;
+      } else {
+        storyAliases[s.id] = storyAliases[uniq[k].id] || uniq[k].id;
+      }
+      return;
+    }
     for (k = 0; k < origTokens.length; k++) if (tokensNearDup(tt, origTokens[k])){ storyAliases[s.id] = ORIGINALS[k].id; return; }
     seen[key] = s.id; keptTokens.push(tt); uniq.push(s);
   });
