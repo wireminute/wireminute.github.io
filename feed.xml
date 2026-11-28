@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 04:33:55 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 05:04:26 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eight Killed as Peruvian Military Helicopter Crashes in Coca-Growing Valley</title>
+      <link>https://wireminute.com/s/peru-military-helicopter-crash-vraem.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/peru-military-helicopter-crash-vraem.html</guid>
+      <description>Eight Peruvian service members have been killed after an air force helicopter crashed in a remote coca-growing valley in the country&apos;s south-east, the defence ministry said, with the pilot the only survivor.</description>
+      <pubDate>Sat, 28 Nov 2026 05:04:26 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-peru-military-helicopter-crash-vraem.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>WWE Star Bronson Reed Dies at 38</title>
       <link>https://wireminute.com/s/wwe-star-bronson-reed-dies-38.html</link>
@@ -44,10 +53,10 @@
       <enclosure url="https://wireminute.com/images/thumb-ukraine-proposes-black-sea-ceasefire-russia-response.jpg" type="image/jpeg" />
     </item>
     <item>
-      <title>Two MSF Staff Killed as Israeli Strike Hits Gaza Clinic</title>
+      <title>Israel Says Two MSF Staff Killed in Gaza Clinic Strike Were Hamas Members</title>
       <link>https://wireminute.com/s/israel-kills-two-msf-staff-gaza-clinic-strike.html</link>
       <guid isPermaLink="true">https://wireminute.com/s/israel-kills-two-msf-staff-gaza-clinic-strike.html</guid>
-      <description>Two staff members of Doctors Without Borders have been killed in an Israeli strike on one of the medical charity&apos;s clinics in Gaza City, the group said, calling it a direct hit on a clearly marked facility whose location the Israeli military knew.</description>
+      <description>The Israeli military has said two Doctors Without Borders staff killed in a strike on the charity&apos;s Gaza City clinic were members of Hamas, as the World Health Organization condemned the attack and the charity demanded accountability.</description>
       <pubDate>Sat, 28 Nov 2026 02:15:48 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-israel-kills-two-msf-staff-gaza-clinic-strike.jpg" type="image/jpeg" />
@@ -267,15 +276,6 @@
       <pubDate>Fri, 27 Nov 2026 02:58:05 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-new-zealand-coalition-loses-majority-final-count.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Russia Hits Nine Ukrainian Regions Overnight After Zelenskyy Warns of Major Grid Attack</title>
-      <link>https://wireminute.com/s/zelenskyy-warns-major-russian-attack-power-grid.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/zelenskyy-warns-major-russian-attack-power-grid.html</guid>
-      <description>Overnight Russian attacks struck railways, power substations and other infrastructure across nine Ukrainian regions, killing one person and injuring six, hours after President Volodymyr Zelenskyy warned that Moscow is preparing a major attack on the country’s power grid.</description>
-      <pubDate>Fri, 27 Nov 2026 02:35:12 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-zelenskyy-warns-major-russian-attack-power-grid.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
