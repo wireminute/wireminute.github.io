@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 06:34:51 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 07:01:10 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Student Deaths at India&apos;s IITs Expose Gaps in Campus Mental Health Support</title>
+      <link>https://wireminute.com/s/iit-student-suicides-support-gaps-india.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/iit-student-suicides-support-gaps-india.html</guid>
+      <description>A student who won a place at one of India&apos;s elite technology institutes died months later in a suspected suicide, a case that has revived hard questions about how the country&apos;s most celebrated campuses look after their brightest students.</description>
+      <pubDate>Sat, 28 Nov 2026 07:01:10 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-iit-student-suicides-support-gaps-india.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>India Says It Killed Kashmir&apos;s Last Local Militant, but Experts Say the Rebels Have Adapted</title>
       <link>https://wireminute.com/s/india-claims-last-local-militant-killed-kashmir-rebels-adapt.html</link>
@@ -62,10 +71,10 @@
       <enclosure url="https://wireminute.com/images/thumb-saudi-intercepts-houthi-cruise-missile-riyadh.jpg" type="image/jpeg" />
     </item>
     <item>
-      <title>Ukraine Proposes Black Sea Ceasefire to Protect Grain Exports, Awaits Russia&apos;s Reply</title>
+      <title>Russia Rejects Black Sea Grain-Ship Ceasefire as Ukraine Warns Food Exports Are at Risk</title>
       <link>https://wireminute.com/s/ukraine-proposes-black-sea-ceasefire-russia-response.html</link>
       <guid isPermaLink="true">https://wireminute.com/s/ukraine-proposes-black-sea-ceasefire-russia-response.html</guid>
-      <description>Ukraine has proposed a ceasefire in the Black Sea to protect grain shipments and restore safe navigation, its foreign minister said on Friday, with Kyiv now waiting for Moscow to respond.</description>
+      <description>Russia has rejected Ukraine&apos;s proposal for a ceasefire covering grain ships in the Black Sea, President Volodymyr Zelenskyy said, as Moscow linked any deal to a halt in Ukrainian strikes on its oil refineries and pipelines.</description>
       <pubDate>Sat, 28 Nov 2026 03:02:00 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-ukraine-proposes-black-sea-ceasefire-russia-response.jpg" type="image/jpeg" />
@@ -267,15 +276,6 @@
       <pubDate>Fri, 27 Nov 2026 08:23:58 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-spain-votes-sunday-snap-election-far-right-vox.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Kenyan Man Wrongly Sentenced to Death Over Attack on British Couple Sues London&apos;s Metropolitan Police</title>
-      <link>https://wireminute.com/s/ali-kololo-wrongly-sentenced-death-sues-met.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/ali-kololo-wrongly-sentenced-death-sues-met.html</guid>
-      <description>A Kenyan woodcutter who spent more than a decade in prison after being wrongly sentenced to death over a 2011 attack on a British couple says London&apos;s Metropolitan Police destroyed his life, as he sues the force over the evidence that put him behind bars.</description>
-      <pubDate>Fri, 27 Nov 2026 03:57:14 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-ali-kololo-wrongly-sentenced-death-sues-met.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
