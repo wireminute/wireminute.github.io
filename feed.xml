@@ -5,8 +5,26 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 03:02:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 03:39:20 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>US Rejects Iranian Claims of Seized Tankers, Carrier Strike and Hormuz Toll</title>
+      <link>https://wireminute.com/s/centcom-rejects-iran-claims-tankers-carrier-toll.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/centcom-rejects-iran-claims-tankers-carrier-toll.html</guid>
+      <description>The United States has denied claims by Iran&apos;s navy chief that American forces seized two Iranian oil tankers, that Iranian forces struck the aircraft carrier USS Abraham Lincoln, and that Washington charges ships $2.5 million to pass through the Strait of Hormuz.</description>
+      <pubDate>Sat, 28 Nov 2026 03:39:20 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-centcom-rejects-iran-claims-tankers-carrier-toll.jpg" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Saudi Air Defences Intercept Houthi Cruise Missile Aimed at Riyadh</title>
+      <link>https://wireminute.com/s/saudi-intercepts-houthi-cruise-missile-riyadh.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/saudi-intercepts-houthi-cruise-missile-riyadh.html</guid>
+      <description>Saudi air defences have intercepted and destroyed a cruise missile launched by Yemen&apos;s Houthis towards Riyadh, the Saudi-led coalition said.</description>
+      <pubDate>Sat, 28 Nov 2026 03:39:20 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-saudi-intercepts-houthi-cruise-missile-riyadh.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Ukraine Proposes Black Sea Ceasefire to Protect Grain Exports, Awaits Russia&apos;s Reply</title>
       <link>https://wireminute.com/s/ukraine-proposes-black-sea-ceasefire-russia-response.html</link>
@@ -258,24 +276,6 @@
       <pubDate>Fri, 27 Nov 2026 01:49:34 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-strike-jazan-refinery-kills-nepali-worker.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Trump Says Victory Over Iran Is at Hand and Offers Tehran a Chance to Make a Deal</title>
-      <link>https://wireminute.com/s/trump-victory-at-hand-iran-thanksgiving-call.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/trump-victory-at-hand-iran-thanksgiving-call.html</guid>
-      <description>President Donald Trump told American troops on Thursday that the United States has &quot;victory at hand&quot; in its war on Iran, while offering Tehran another chance to reach a deal and avoid further bloodshed.</description>
-      <pubDate>Fri, 27 Nov 2026 01:16:09 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-trump-victory-at-hand-iran-thanksgiving-call.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Zelenskyy Says US Is Too Focused on the Middle East and Not Pressing Russia Hard Enough</title>
-      <link>https://wireminute.com/s/zelenskyy-us-too-focused-middle-east-patriot-delays.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/zelenskyy-us-too-focused-middle-east-patriot-delays.html</guid>
-      <description>Ukrainian President Volodymyr Zelenskyy has accused the United States of focusing too much on the Middle East and not pushing Russia hard enough in peace talks, saying delays in delivering anti-ballistic missiles are costing Ukrainian lives.</description>
-      <pubDate>Thu, 26 Nov 2026 23:33:56 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-zelenskyy-us-too-focused-middle-east-patriot-delays.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
