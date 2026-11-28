@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 01:21:52 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 02:15:48 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Two MSF Staff Killed as Israeli Strike Hits Gaza Clinic</title>
+      <link>https://wireminute.com/s/israel-kills-two-msf-staff-gaza-clinic-strike.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/israel-kills-two-msf-staff-gaza-clinic-strike.html</guid>
+      <description>Two staff members of Doctors Without Borders have been killed in an Israeli strike on one of the medical charity&apos;s clinics in Gaza City, the group said, calling it a direct hit on a clearly marked facility whose location the Israeli military knew.</description>
+      <pubDate>Sat, 28 Nov 2026 02:15:48 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-israel-kills-two-msf-staff-gaza-clinic-strike.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Putin Unveils Nuclear Submarine Armed With Hypersonic Missiles</title>
       <link>https://wireminute.com/s/putin-unveils-nuclear-submarine-perm-zircon-missiles.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Thu, 26 Nov 2026 23:07:16 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-cia-waterboarded-more-detainees-than-admitted.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>Israel Threatens New Gaza Operation That Would Displace One Million People</title>
-      <link>https://wireminute.com/s/israel-katz-threatens-displace-million-gazans.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/israel-katz-threatens-displace-million-gazans.html</guid>
-      <description>Israel&apos;s defence minister has threatened a new military operation in Gaza that would force one million Palestinians from their homes, unless Hamas hands over its weapons.</description>
-      <pubDate>Thu, 26 Nov 2026 20:57:06 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-israel-katz-threatens-displace-million-gazans.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
