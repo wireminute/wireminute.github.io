@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 03:39:20 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 04:33:55 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WWE Star Bronson Reed Dies at 38</title>
+      <link>https://wireminute.com/s/wwe-star-bronson-reed-dies-38.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/wwe-star-bronson-reed-dies-38.html</guid>
+      <description>World Wrestling Entertainment has announced the death of Jermaine Haley, the Australian wrestler known to fans as Bronson Reed, at the age of 38, saying he died on Friday due to medical complications.</description>
+      <pubDate>Sat, 28 Nov 2026 04:33:55 GMT</pubDate>
+      <category>Sports</category>
+      <enclosure url="https://wireminute.com/images/thumb-wwe-star-bronson-reed-dies-38.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>US Rejects Iranian Claims of Seized Tankers, Carrier Strike and Hormuz Toll</title>
       <link>https://wireminute.com/s/centcom-rejects-iran-claims-tankers-carrier-toll.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Fri, 27 Nov 2026 02:35:12 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-zelenskyy-warns-major-russian-attack-power-grid.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>One Worker Killed as Projectile Hits Saudi Arabia&apos;s Jazan Oil Refinery</title>
-      <link>https://wireminute.com/s/strike-jazan-refinery-kills-nepali-worker.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/strike-jazan-refinery-kills-nepali-worker.html</guid>
-      <description>A projectile struck Saudi Aramco&apos;s Jazan oil refinery in southwestern Saudi Arabia on Thursday, killing a Nepali worker and injuring several others, the Saudi Energy Ministry said, as Nepal confirmed three more of its citizens were hurt and the Saudi-led coalition said it shot down a Houthi drone.</description>
-      <pubDate>Fri, 27 Nov 2026 01:49:34 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-strike-jazan-refinery-kills-nepali-worker.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
