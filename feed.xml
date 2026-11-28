@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 05:04:26 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 05:52:00 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Two American Airlines Jets Clip Wings While Taxiing at Reagan National Airport</title>
+      <link>https://wireminute.com/s/american-airlines-jets-clip-wings-reagan-national.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/american-airlines-jets-clip-wings-reagan-national.html</guid>
+      <description>Two American Airlines passenger jets clipped wings while taxiing for departure at Ronald Reagan Washington National Airport on Friday evening, shearing off a wingtip, with no injuries reported, the Federal Aviation Administration said.</description>
+      <pubDate>Sat, 28 Nov 2026 05:52:00 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-american-airlines-jets-clip-wings-reagan-national.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Eight Killed as Peruvian Military Helicopter Crashes in Coca-Growing Valley</title>
       <link>https://wireminute.com/s/peru-military-helicopter-crash-vraem.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Fri, 27 Nov 2026 03:24:41 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-makkah-pact-talks-islamabad-yemen-agenda.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>New Zealand&apos;s Ruling Coalition Loses Its Majority in Final Count, Leaving a Hung Parliament</title>
-      <link>https://wireminute.com/s/new-zealand-coalition-loses-majority-final-count.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/new-zealand-coalition-loses-majority-final-count.html</guid>
-      <description>New Zealand&apos;s ruling coalition has lost its parliamentary majority in the final election count, leaving Prime Minister Christopher Luxon dependent on a small centrist party to stay in power.</description>
-      <pubDate>Fri, 27 Nov 2026 02:58:05 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-new-zealand-coalition-loses-majority-final-count.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
