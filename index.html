@@ -15044,16 +15044,36 @@ function runSearch(){
      "meta" hit "metal" in a summary and surface an unrelated story. */
   function wordHit(hay, w){
     var ew = w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    return new RegExp("(^|[^a-z0-9])" + ew + "([^a-z0-9]|$)").test(hay);
+    /* Watchdog fix 2026-11-28: whole-word match missed plurals — searching
+       "Falkland" returned "No results" for the top story "Argentina's bid
+       to stop Falklands oil drilling rejected" (live 2026-11-28 17:39 PKT),
+       because "Falklands" ends the word with "s". Allow one trailing "s"
+       unless the query already ends in "s". "meta" still cannot hit
+       "metal": only "s" is tolerated, and only as a whole-word ending. */
+    var plural = /s$/.test(w) ? "" : "s?";
+    return new RegExp("(^|[^a-z0-9])" + ew + plural + "([^a-z0-9]|$)").test(hay);
   }
-  var hits = searchPool().filter(function(s){
+  var hits = searchPool().map(function(s){
     /* Watchdog fix 2026-11-27: the haystack was title + summary + lede +
        section only, so "Kololo" returned "No results" for a same-day
        original whose name appears only in its body/keyPoints. Include
        body + keyPoints so any word in the article is findable. */
-    var hay = (s.title + " " + (s.summary || "") + " " + (s.lede || "") + " " + ((s.body || []).join(" ")) + " " + ((s.keyPoints || []).join(" ")) + " " + (secName(s.sec) || "")).toLowerCase();
-    return words.every(function(w){ return wordHit(hay, w); });
-  }).sort(function(a, b){ return b.time - a.time; }).slice(0, 20);
+    var titleHay = (s.title || "").toLowerCase();
+    var sumHay = ((s.summary || "") + " " + (s.lede || "")).toLowerCase();
+    var bodyHay = (((s.body || []).join(" ")) + " " + ((s.keyPoints || []).join(" ")) + " " + (secName(s.sec) || "")).toLowerCase();
+    var fullHay = titleHay + " " + sumHay + " " + bodyHay;
+    if (!words.every(function(w){ return wordHit(fullHay, w); })) return null;
+    /* Watchdog fix 2026-11-28: time-only sorting let a body-only match
+       ("Christmas" buried in the Centrica energy-bills body, 5 d old)
+       rank beside real headline matches. Rank title hits first, then
+       summary/lede hits, then body/keyPoints hits; newest first inside
+       each tier. Body-only hits stay findable (Kololo), just ranked last. */
+    var rank = words.every(function(w){ return wordHit(titleHay, w); }) ? 0
+      : words.every(function(w){ return wordHit(sumHay, w); }) ? 1 : 2;
+    return { s: s, rank: rank };
+  }).filter(function(h){ return !!h; })
+    .sort(function(a, b){ return (a.rank - b.rank) || (b.s.time - a.s.time); })
+    .slice(0, 20).map(function(h){ return h.s; });
   if (!hits.length){
     searchResults.innerHTML = '<p class="status">No results for &ldquo;' + esc(searchInput.value.trim()) + '&rdquo;. Try another word.</p>';
     return;
