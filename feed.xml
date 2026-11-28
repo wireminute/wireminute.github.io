@@ -5,8 +5,17 @@
     <link>https://wireminute.com/</link>
     <description>Breaking news and live world updates from WireMinute: world, politics, business, technology, sports and health, reported in our own words and updated every minute.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 02:15:48 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 03:02:00 GMT</lastBuildDate>
     <atom:link href="https://wireminute.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ukraine Proposes Black Sea Ceasefire to Protect Grain Exports, Awaits Russia&apos;s Reply</title>
+      <link>https://wireminute.com/s/ukraine-proposes-black-sea-ceasefire-russia-response.html</link>
+      <guid isPermaLink="true">https://wireminute.com/s/ukraine-proposes-black-sea-ceasefire-russia-response.html</guid>
+      <description>Ukraine has proposed a ceasefire in the Black Sea to protect grain shipments and restore safe navigation, its foreign minister said on Friday, with Kyiv now waiting for Moscow to respond.</description>
+      <pubDate>Sat, 28 Nov 2026 03:02:00 GMT</pubDate>
+      <category>World</category>
+      <enclosure url="https://wireminute.com/images/thumb-ukraine-proposes-black-sea-ceasefire-russia-response.jpg" type="image/jpeg" />
+    </item>
     <item>
       <title>Two MSF Staff Killed as Israeli Strike Hits Gaza Clinic</title>
       <link>https://wireminute.com/s/israel-kills-two-msf-staff-gaza-clinic-strike.html</link>
@@ -267,15 +276,6 @@
       <pubDate>Thu, 26 Nov 2026 23:33:56 GMT</pubDate>
       <category>World</category>
       <enclosure url="https://wireminute.com/images/thumb-zelenskyy-us-too-focused-middle-east-patriot-delays.jpg" type="image/jpeg" />
-    </item>
-    <item>
-      <title>CIA Waterboarded More Detainees Than It Admitted, Newly Released Files Suggest</title>
-      <link>https://wireminute.com/s/cia-waterboarded-more-detainees-than-admitted.html</link>
-      <guid isPermaLink="true">https://wireminute.com/s/cia-waterboarded-more-detainees-than-admitted.html</guid>
-      <description>The CIA may have waterboarded more detainees than the three it has officially acknowledged, according to newly released documents that describe an additional case at a secret prison in Afghanistan.</description>
-      <pubDate>Thu, 26 Nov 2026 23:07:16 GMT</pubDate>
-      <category>World</category>
-      <enclosure url="https://wireminute.com/images/thumb-cia-waterboarded-more-detainees-than-admitted.jpg" type="image/jpeg" />
     </item>
   </channel>
 </rss>
